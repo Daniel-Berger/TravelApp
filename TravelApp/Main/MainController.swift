@@ -35,7 +35,8 @@ class MainController: UIViewController {
         mkMapView.mapType = .standard
         
         setupRegionForMap()
-        setupAnnotaionsForMap()
+//        setupAnnotaionsForMap()
+        performLocalSearch()
         
 //        mkMapView.translatesAutoresizingMaskIntoConstraints = false
 //        mkMapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -76,6 +77,81 @@ class MainController: UIViewController {
        
     }
     
+    fileprivate func  performLocalSearch() {
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = "airport"
+        request.region = mkMapView.region
+
+        let localSearch = MKLocalSearch(request: request)
+        localSearch.start { (response, error) in
+            if let error = error {
+                print("Local search error ", error)
+                return
+            }
+            response?.mapItems.forEach({ (mapItem) in
+                
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = mapItem.placemark.coordinate
+                annotation.title = mapItem.name
+                
+//                if let phone = mapItem.phoneNumber {
+//                    annotation.subtitle = phone
+//                }
+                
+//                if let mapUrl = mapItem.url {
+//                     let mapUrlString = String(describing: mapUrl)
+//                    annotation.subtitle = mapUrlString
+//                }
+                
+                let placemark = mapItem.placemark
+                var addressString = ""
+                
+                if placemark.subThoroughfare != nil {
+                    addressString += placemark.subThoroughfare! + " "
+                }
+                
+                if placemark.thoroughfare != nil {
+                    addressString += placemark.thoroughfare! + " "
+                }
+                
+                if placemark.locality != nil {
+                    addressString += placemark.locality! + " "
+                }
+                
+                if placemark.postalCode != nil {
+                    addressString += placemark.postalCode! + " "
+                }
+                
+                if placemark.subAdministrativeArea != nil {
+                    addressString += placemark.subAdministrativeArea! + " "
+                }
+                
+                if placemark.administrativeArea != nil {
+                    addressString += placemark.administrativeArea! + " "
+                }
+                
+                if placemark.country != nil {
+                    addressString += placemark.country! + " "
+                }
+                    
+                annotation.subtitle = addressString
+                self.mkMapView.addAnnotation(annotation)
+                self.mkMapView.showAnnotations(self.mkMapView.annotations, animated: true)
+                
+//                print("NAME")
+//                print(mapItem.name)
+//                print("PHONE NUMBER")
+//                print(mapItem.phoneNumber)
+//                print("PLACEMARK")
+//                print(mapItem.placemark)
+//                print("DESCRIPTION")
+//                print(mapItem.description)
+//                print("URL")
+//                print(mapItem.url)
+
+            })
+        }
+    }
 }
 
 
