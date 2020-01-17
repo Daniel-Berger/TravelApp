@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import LBTATools
+import Combine
 
 extension MainController: MKMapViewDelegate {
     
@@ -24,7 +25,9 @@ extension MainController: MKMapViewDelegate {
 
 class MainController: UIViewController {
     
-     let mkMapView = MKMapView()
+    let mkMapView = MKMapView()
+    let searchTextField = UITextField(placeholder: "Search for location")
+    var cancellable: AnyCancellable? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +41,45 @@ class MainController: UIViewController {
 //        setupAnnotaionsForMap()
         performLocalSearch()
         
+        setupSearchUI()
+        
 //        mkMapView.translatesAutoresizingMaskIntoConstraints = false
 //        mkMapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
 //        mkMapView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 //        mkMapView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
 //        mkMapView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    }
+    
+    fileprivate func setupSearchUI() {
+        searchTextField.textColor = .black
+        let whiteContainer = UIView(backgroundColor: .white)
+        view.addSubview(whiteContainer)
+        whiteContainer.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16), size: CGSize(width: 0, height: 50))
         
+        whiteContainer.stack(searchTextField).withMargins(.allSides(16))
+        
+//        searchTextField.addTarget(self, action: #selector(handleSearchChanges), for: .editingChanged)
+        
+        // search throttling - Combine
+//        NotificationCenter.default
+//                   .publisher(for: UITextField.textDidChangeNotification, object: searchTextField)
+//                   .debounce(for: .milliseconds(500), scheduler: RunLoop.main)
+//                   .sink { (_) in
+//                    print("lololololol")
+//                       self.performLocalSearch()
+//               }
+        
+        self.cancellable = NotificationCenter.default
+            .publisher(for: UITextField.textDidChangeNotification, object: searchTextField)
+            .debounce(for: .milliseconds(500), scheduler: RunLoop.main)
+            .sink { _ in
+                self.performLocalSearch()
+        }
+    }
+    
+    
+    @objc fileprivate func handleSearchChanges() {
+        performLocalSearch()
     }
     
     fileprivate func setupRegionForMap() {
@@ -79,15 +115,21 @@ class MainController: UIViewController {
     
     fileprivate func  performLocalSearch() {
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = "airport"
+        request.naturalLanguageQuery = searchTextField.text
         request.region = mkMapView.region
 
         let localSearch = MKLocalSearch(request: request)
         localSearch.start { (response, error) in
+            
+            // error
             if let error = error {
                 print("Local search error ", error)
                 return
             }
+            
+            // success
+            self.mkMapView.removeAnnotations(self.mkMapView.annotations)
+            
             response?.mapItems.forEach({ (mapItem) in
                 
                 let annotation = MKPointAnnotation()
@@ -137,17 +179,6 @@ class MainController: UIViewController {
                 annotation.subtitle = addressString
                 self.mkMapView.addAnnotation(annotation)
                 self.mkMapView.showAnnotations(self.mkMapView.annotations, animated: true)
-                
-//                print("NAME")
-//                print(mapItem.name)
-//                print("PHONE NUMBER")
-//                print(mapItem.phoneNumber)
-//                print("PLACEMARK")
-//                print(mapItem.placemark)
-//                print("DESCRIPTION")
-//                print(mapItem.description)
-//                print("URL")
-//                print(mapItem.url)
 
             })
         }
