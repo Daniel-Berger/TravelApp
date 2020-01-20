@@ -28,6 +28,7 @@ class MainController: UIViewController {
     let mkMapView = MKMapView()
     let searchTextField = UITextField(placeholder: "Search for location")
     var cancellable: AnyCancellable? = nil
+    let locationsController = LocationsCarouselController(scrollDirection: .horizontal)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +41,8 @@ class MainController: UIViewController {
         setupRegionForMap()
 //        setupAnnotaionsForMap()
         performLocalSearch()
-        
         setupSearchUI()
+        setupLocationsCarousel()
         
 //        mkMapView.translatesAutoresizingMaskIntoConstraints = false
 //        mkMapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -49,6 +50,16 @@ class MainController: UIViewController {
 //        mkMapView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
 //        mkMapView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
+    
+    fileprivate func setupLocationsCarousel() {
+        let locationsView = locationsController.view!
+       
+        
+        view.addSubview(locationsView)
+        locationsView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, size: CGSize(width: 0, height: 150))
+    }
+    
+    
     
     fileprivate func setupSearchUI() {
         searchTextField.textColor = .black
