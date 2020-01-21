@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C42FD4A23D7869E00C10949 /* pomona.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4C42FD4923D7869E00C10949 /* pomona.gpx */; };
 		4CE2014D23CF6F7A00F3E33E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2014C23CF6F7A00F3E33E /* AppDelegate.swift */; };
 		4CE2014F23CF6F7A00F3E33E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2014E23CF6F7A00F3E33E /* SceneDelegate.swift */; };
 		4CE2015123CF6F7A00F3E33E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2015023CF6F7A00F3E33E /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C42FD4923D7869E00C10949 /* pomona.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pomona.gpx; sourceTree = "<group>"; };
 		4CE2014923CF6F7A00F3E33E /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE2014C23CF6F7A00F3E33E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE2014E23CF6F7A00F3E33E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		4CE2014023CF6F7A00F3E33E = {
 			isa = PBXGroup;
 			children = (
+				4C42FD4923D7869E00C10949 /* pomona.gpx */,
 				4CE2014B23CF6F7A00F3E33E /* TravelApp */,
 				4CE2014A23CF6F7A00F3E33E /* Products */,
 			);
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE2015923CF6F7E00F3E33E /* LaunchScreen.storyboard in Resources */,
+				4C42FD4A23D7869E00C10949 /* pomona.gpx in Resources */,
 				4CE2015623CF6F7E00F3E33E /* Preview Assets.xcassets in Resources */,
 				4CE2015323CF6F7E00F3E33E /* Assets.xcassets in Resources */,
 			);

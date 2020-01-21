@@ -54,7 +54,7 @@ extension MainController: CLLocationManagerDelegate {
         firstLocation.speed
         // center the map on user location
         mkMapView.setRegion(MKCoordinateRegion(center: firstLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), animated: false)
-        locationManager.stopUpdatingLocation()
+//        locationManager.stopUpdatingLocation()
         
     }
 }
