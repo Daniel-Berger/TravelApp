@@ -37,12 +37,14 @@ class MainController: UIViewController {
         view.addSubview(mkMapView)
         mkMapView.fillSuperview()
         mkMapView.mapType = .standard
+//        searchTextField.delegate = self
         
         setupRegionForMap()
 //        setupAnnotaionsForMap()
         performLocalSearch()
         setupSearchUI()
         setupLocationsCarousel()
+        locationsController.mainController = self
         
 //        mkMapView.translatesAutoresizingMaskIntoConstraints = false
 //        mkMapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -140,6 +142,7 @@ class MainController: UIViewController {
             
             // success
             self.mkMapView.removeAnnotations(self.mkMapView.annotations)
+            self.locationsController.items.removeAll()
             
             response?.mapItems.forEach({ (mapItem) in
                 
@@ -189,13 +192,25 @@ class MainController: UIViewController {
                     
                 annotation.subtitle = addressString
                 self.mkMapView.addAnnotation(annotation)
-                self.mkMapView.showAnnotations(self.mkMapView.annotations, animated: true)
-
+                
+                self.locationsController.items.append(mapItem)
             })
+            // for carousel
+            self.locationsController.collectionView.scrollToItem(at: [0 ,0], at: .centeredHorizontally, animated: true)
+            self.mkMapView.showAnnotations(self.mkMapView.annotations, animated: true)
+
         }
     }
 }
 
+extension MainController: UITextFieldDelegate {
+   
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("textFieldShouldReturn")
+        textField.resignFirstResponder()
+        return true
+    }
+}
 
 // SwiftUI Preview
 import SwiftUI
@@ -222,3 +237,4 @@ struct MainPreview: PreviewProvider {
         
     }
 }
+
