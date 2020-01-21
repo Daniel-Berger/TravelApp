@@ -15,11 +15,47 @@ extension MainController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        var annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "id")
-        annotationView.canShowCallout = true
-        annotationView.image = UIImage(imageLiteralResourceName: "tourist")
+        if (annotation is MKPointAnnotation) {
+            var annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "id")
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(imageLiteralResourceName: "tourist")
+            return annotationView
+        }
+        return nil
+    }
+}
+
+extension MainController: UITextFieldDelegate {
+   
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("textFieldShouldReturn")
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+extension MainController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         
-        return annotationView
+        switch status {
+        case .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        default:
+            print("No authorization permitted")
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let firstLocation = locations.first else { return }
+        firstLocation.altitude
+        firstLocation.course
+        firstLocation.floor
+        firstLocation.speed
+        // center the map on user location
+        mkMapView.setRegion(MKCoordinateRegion(center: firstLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), animated: false)
+        locationManager.stopUpdatingLocation()
+        
     }
 }
 
@@ -29,15 +65,17 @@ class MainController: UIViewController {
     let searchTextField = UITextField(placeholder: "Search for location")
     var cancellable: AnyCancellable? = nil
     let locationsController = LocationsCarouselController(scrollDirection: .horizontal)
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
         mkMapView.delegate = self
+//        searchTextField.delegate = self
         view.addSubview(mkMapView)
         mkMapView.fillSuperview()
         mkMapView.mapType = .standard
-//        searchTextField.delegate = self
+        mkMapView.showsUserLocation = true
         
         setupRegionForMap()
 //        setupAnnotaionsForMap()
@@ -45,6 +83,7 @@ class MainController: UIViewController {
         setupSearchUI()
         setupLocationsCarousel()
         locationsController.mainController = self
+        requestUserLocation()
         
 //        mkMapView.translatesAutoresizingMaskIntoConstraints = false
 //        mkMapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -201,16 +240,15 @@ class MainController: UIViewController {
 
         }
     }
-}
-
-extension MainController: UITextFieldDelegate {
-   
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("textFieldShouldReturn")
-        textField.resignFirstResponder()
-        return true
+    
+    fileprivate func requestUserLocation() {
+        
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
     }
 }
+
+
 
 // SwiftUI Preview
 import SwiftUI
