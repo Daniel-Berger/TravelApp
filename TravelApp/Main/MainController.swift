@@ -23,6 +23,14 @@ extension MainController: MKMapViewDelegate {
         }
         return nil
     }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+
+        // maybe use address instead of title in case two restaurants have the same name
+        guard let index = self.locationsController.items.firstIndex(where: { $0.name == view.annotation?.title}) else { return }
+       
+        locationsController.collectionView.scrollToItem(at: [0, index], at: .centeredHorizontally, animated: true)
+    }
 }
 
 extension MainController: UITextFieldDelegate {
@@ -48,10 +56,10 @@ extension MainController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let firstLocation = locations.first else { return }
-        firstLocation.altitude
-        firstLocation.course
-        firstLocation.floor
-        firstLocation.speed
+//        firstLocation.altitude
+//        firstLocation.course
+//        firstLocation.floor
+//        firstLocation.speed
         // center the map on user location
         mkMapView.setRegion(MKCoordinateRegion(center: firstLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), animated: false)
 //        locationManager.stopUpdatingLocation()
