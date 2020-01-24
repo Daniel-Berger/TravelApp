@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C42FD4A23D7869E00C10949 /* pomona.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4C42FD4923D7869E00C10949 /* pomona.gpx */; };
+		4C42FDB623DB53DD00C10949 /* DirectionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42FDB523DB53DD00C10949 /* DirectionsController.swift */; };
 		4CE2014D23CF6F7A00F3E33E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2014C23CF6F7A00F3E33E /* AppDelegate.swift */; };
 		4CE2014F23CF6F7A00F3E33E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2014E23CF6F7A00F3E33E /* SceneDelegate.swift */; };
 		4CE2015123CF6F7A00F3E33E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2015023CF6F7A00F3E33E /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		4C42FD4923D7869E00C10949 /* pomona.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pomona.gpx; sourceTree = "<group>"; };
+		4C42FDB523DB53DD00C10949 /* DirectionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsController.swift; sourceTree = "<group>"; };
 		4CE2014923CF6F7A00F3E33E /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE2014C23CF6F7A00F3E33E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE2014E23CF6F7A00F3E33E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C42FDB423DB53C900C10949 /* Directions */ = {
+			isa = PBXGroup;
+			children = (
+				4C42FDB523DB53DD00C10949 /* DirectionsController.swift */,
+			);
+			path = Directions;
+			sourceTree = "<group>";
+		};
 		4CE2014023CF6F7A00F3E33E = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		4CE2014B23CF6F7A00F3E33E /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C42FDB423DB53C900C10949 /* Directions */,
 				4CE2016023CF736A00F3E33E /* Main */,
 				4CE2014C23CF6F7A00F3E33E /* AppDelegate.swift */,
 				4CE2014E23CF6F7A00F3E33E /* SceneDelegate.swift */,
@@ -177,6 +188,7 @@
 			files = (
 				4CE2016923D75C0500F3E33E /* MKMapItem+Address.swift in Sources */,
 				4CE2016723D6099700F3E33E /* LocationsCarouselController.swift in Sources */,
+				4C42FDB623DB53DD00C10949 /* DirectionsController.swift in Sources */,
 				4CE2016223CF739200F3E33E /* MainController.swift in Sources */,
 				4CE2014D23CF6F7A00F3E33E /* AppDelegate.swift in Sources */,
 				4CE2014F23CF6F7A00F3E33E /* SceneDelegate.swift in Sources */,
