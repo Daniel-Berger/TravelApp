@@ -132,21 +132,27 @@ class DirectionsController: UIViewController {
                                  distribution: .fillEqually)
         .withMargins(UIEdgeInsets(top: 0, left: 16, bottom: 12, right: 16))
         
-        startTextField.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(handleChangeStartLocation)))
+        startTextField.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleChangeStartLocation)))
+        
+        endTextField.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleChangeEndLocation)))
         
         navigationController?.navigationBar.isHidden = true
     }
     
     @objc fileprivate func handleChangeStartLocation() {
-        print("Tap gesture works")
+       let vc = LocationSearchController()
+        vc.selectionHandler = { [weak self] mapItem in
+            self?.startTextField.text = mapItem.name
+        }
         
-        let vc = UIViewController()
-        vc.view.backgroundColor = .red
-        
-        // temp hack
-        let button = UIButton(title: "BACK", titleColor: .black, font: .boldSystemFont(ofSize: 14), backgroundColor: .clear, target: self, action: #selector(handleBack))
-        vc.view.addSubview(button)
-        button.fillSuperview()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc fileprivate func handleChangeEndLocation() {
+        let vc = LocationSearchController()
+        vc.selectionHandler = { [weak self] mapItem in
+            self?.endTextField.text = mapItem.name
+        }
         
         navigationController?.pushViewController(vc, animated: true)
     }

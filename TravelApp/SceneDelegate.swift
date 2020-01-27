@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            window.rootViewController = UIHostingController(rootView: contentView)
       
 //            window.rootViewController = MainController()
-            window.rootViewController = DirectionsController()
+            window.rootViewController = UINavigationController(rootViewController: DirectionsController())
             
             self.window = window
             window.makeKeyAndVisible()
