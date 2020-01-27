@@ -25,6 +25,8 @@ class DirectionsController: UIViewController {
     
     let mapView = MKMapView()
     let navBar = UIView()
+    let startTextField = IndentedTextField(padding: 12, cornerRadius: 5) // LBTATools
+    let endTextField = IndentedTextField(padding: 12, cornerRadius: 5)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +50,10 @@ class DirectionsController: UIViewController {
     fileprivate func requestForDirections() {
         let request = MKDirections.Request()
 
-        let startingPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 40.753402, longitude: -73.982271))
+        let startingPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 41.189244, longitude: -74.054350))
         request.source = MKMapItem(placemark: startingPlacemark)
         
-        let endingPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 40.706175, longitude: -74.018171))
+        let endingPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 40.625086, longitude: -73.954562))
         request.destination = MKMapItem(placemark: endingPlacemark)
         
 //        request.requestsAlternateRoutes
@@ -84,16 +86,16 @@ class DirectionsController: UIViewController {
     }
     
     fileprivate func setupStartEndDummyAnnotation() {
-        let newYorkPublicLibraryAnnotation = MKPointAnnotation()
-        newYorkPublicLibraryAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.753402, longitude: -73.982271)
-        newYorkPublicLibraryAnnotation.title = "start"
+        let startPointAnnotation = MKPointAnnotation()
+        startPointAnnotation.coordinate = CLLocationCoordinate2D(latitude: 41.189244, longitude: -74.054350)
+        startPointAnnotation.title = "start"
         
-        let museumAnnotation = MKPointAnnotation()
-        museumAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.706175, longitude: -74.018171)
-        museumAnnotation.title = "end"
+        let endPointAnnotation = MKPointAnnotation()
+        endPointAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.625086, longitude: -73.954562)
+        endPointAnnotation.title = "end"
         
-        mapView.addAnnotation(newYorkPublicLibraryAnnotation)
-        mapView.addAnnotation(museumAnnotation)
+        mapView.addAnnotation(startPointAnnotation)
+        mapView.addAnnotation(endPointAnnotation)
         
         mapView.showAnnotations(mapView.annotations, animated: true)
     }
@@ -102,8 +104,55 @@ class DirectionsController: UIViewController {
         navBar.backgroundColor = #colorLiteral(red: 0.1259145737, green: 0.5621746778, blue: 0.9666383862, alpha: 1) //colorLiteral
         view.addSubview(navBar)
         navBar.setupShadow(opacity: 0.5, radius: 5)
-        navBar.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.topAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: -100, right: 0))
+        navBar.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.topAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: -120, right: 0))
 
+        startTextField.attributedPlaceholder = NSAttributedString(string: "Start", attributes: [.foregroundColor : UIColor.white])
+        endTextField.attributedPlaceholder = NSAttributedString(string: "Destination", attributes: [.foregroundColor : UIColor.white])
+
+        [startTextField, endTextField].forEach { (textField) in
+            textField.backgroundColor = .init(white: 1, alpha: 0.3)
+            textField.textColor = .white
+        }
+        
+        let containerView = UIView(backgroundColor: .clear)
+        navBar.addSubview(containerView)
+        containerView.fillSuperviewSafeAreaLayoutGuide()
+        
+        let startIcon = UIImageView(image: UIImage(named: "start-location-icon"), contentMode: .scaleAspectFit)
+        startIcon.constrainWidth(20)
+        
+        let endIcon = UIImageView(image: UIImage(named: "end-location-icon")?.withRenderingMode(.alwaysTemplate), contentMode: .scaleAspectFit)
+        endIcon.constrainWidth(20)
+        endIcon.tintColor = .white
+        
+        containerView.stack(
+            containerView.hstack(startIcon, startTextField, spacing: 16),
+            containerView.hstack(endIcon, endTextField, spacing: 16),
+                                 spacing: 12,
+                                 distribution: .fillEqually)
+        .withMargins(UIEdgeInsets(top: 0, left: 16, bottom: 12, right: 16))
+        
+        startTextField.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(handleChangeStartLocation)))
+        
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    @objc fileprivate func handleChangeStartLocation() {
+        print("Tap gesture works")
+        
+        let vc = UIViewController()
+        vc.view.backgroundColor = .red
+        
+        // temp hack
+        let button = UIButton(title: "BACK", titleColor: .black, font: .boldSystemFont(ofSize: 14), backgroundColor: .clear, target: self, action: #selector(handleBack))
+        vc.view.addSubview(button)
+        button.fillSuperview()
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func handleBack() {
+        navigationController?.popViewController(animated: true)
     }
     
     fileprivate func setupRegionForMap() {
@@ -121,23 +170,21 @@ class DirectionsController: UIViewController {
 struct DirectionsPreview: PreviewProvider {
     
     static var previews: some View {
-//        Text("Hello DirectionController World!")
-        ContainterView().edgesIgnoringSafeArea(.all)
-            .environment(\.colorScheme, .dark)
+        ContainerView().edgesIgnoringSafeArea(.all)
+//            .environment(\.colorScheme, .light)
     }
     
-    struct ContainterView: UIViewControllerRepresentable {
+    struct ContainerView: UIViewControllerRepresentable {
         
-        typealias UIViewControllerType = DirectionsController
-        
-
-        func makeUIViewController(context: UIViewControllerRepresentableContext<DirectionsPreview.ContainterView>) -> DirectionsPreview.ContainterView.UIViewControllerType {
-            return DirectionsController()
+        func makeUIViewController(context: UIViewControllerRepresentableContext<DirectionsPreview.ContainerView>) -> UIViewController {
+            return UINavigationController(rootViewController: DirectionsController())
         }
         
-        func updateUIViewController(_ uiViewController: DirectionsPreview.ContainterView.UIViewControllerType, context: UIViewControllerRepresentableContext<DirectionsPreview.ContainterView>) {
+        func updateUIViewController(_ uiViewController: DirectionsPreview.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<DirectionsPreview.ContainerView>) {
             
         }
         
     }
+    
 }
+
