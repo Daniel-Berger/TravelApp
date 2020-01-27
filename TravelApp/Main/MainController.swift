@@ -108,7 +108,7 @@ class MainController: UIViewController {
         locationsView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, size: CGSize(width: 0, height: 150))
     }
     
-    
+    var listener: AnyCancellable!
     
     fileprivate func setupSearchUI() {
         searchTextField.textColor = .black
@@ -129,7 +129,7 @@ class MainController: UIViewController {
 //                       self.performLocalSearch()
 //               }
         
-        self.cancellable = NotificationCenter.default
+        listener = NotificationCenter.default
             .publisher(for: UITextField.textDidChangeNotification, object: searchTextField)
             .debounce(for: .milliseconds(500), scheduler: RunLoop.main)
             .sink { _ in

@@ -43,8 +43,8 @@ class DirectionsController: UIViewController {
         mapView.showsCompass = true
         mapView.showsUserLocation = true
 
-        setupStartEndDummyAnnotation()
-        requestForDirections()
+//        setupStartEndDummyAnnotation()
+//        requestForDirections()
     }
     
     fileprivate func requestForDirections() {
