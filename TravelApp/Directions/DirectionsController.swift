@@ -10,6 +10,7 @@ import UIKit
 import SwiftUI
 import MapKit
 import LBTATools
+import JGProgressHUD
 
 extension DirectionsController: MKMapViewDelegate {
     
@@ -49,20 +50,20 @@ class DirectionsController: UIViewController {
     
     fileprivate func requestForDirections() {
         let request = MKDirections.Request()
+        request.source = startMapItem
+        request.destination = endMapItem
 
-        let startingPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 41.189244, longitude: -74.054350))
-        request.source = MKMapItem(placemark: startingPlacemark)
+//        request.transportType = MKDirectionsTransportType.automobile
+//        request.requestsAlternateRoutes = true
         
-        let endingPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 40.625086, longitude: -73.954562))
-        request.destination = MKMapItem(placemark: endingPlacemark)
-        
-//        request.requestsAlternateRoutes
-//        request.transportType = MKDirectionsTransportType.walking
-        request.transportType = MKDirectionsTransportType.automobile
-        request.requestsAlternateRoutes = true
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Routing..."
+        hud.show(in: view)
         
         let directions = MKDirections(request: request)
         directions.calculate { (response, error) in
+            hud.dismiss()
+            
             if let error = error {
                 print("Failed to calculate direction ", error)
                 return
@@ -139,21 +140,52 @@ class DirectionsController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
+    var startMapItem: MKMapItem?
+    var endMapItem: MKMapItem?
+    
     @objc fileprivate func handleChangeStartLocation() {
        let vc = LocationSearchController()
         vc.selectionHandler = { [weak self] mapItem in
             self?.startTextField.text = mapItem.name
+            self?.startMapItem = mapItem
+            self?.refreshMap()
         }
         
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func refreshMap() {
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.removeOverlays(mapView.overlays)
+        
+        if let mapItem = startMapItem {
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = mapItem.placemark.coordinate
+                annotation.title = mapItem.name
+                self.mapView.addAnnotation(annotation)
+//            self.mapView.showAnnotations(self.mapView.annotations, animated: true)
+        }
+        
+        if let mapItem = endMapItem {
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = mapItem.placemark.coordinate
+                annotation.title = mapItem.name
+                self.mapView.addAnnotation(annotation)
+//            self.mapView.showAnnotations(self.mapView.annotations, animated: true)
+              }
+        
+        requestForDirections()
+        mapView.showAnnotations(self.mapView.annotations, animated: true)
     }
     
     @objc fileprivate func handleChangeEndLocation() {
         let vc = LocationSearchController()
         vc.selectionHandler = { [weak self] mapItem in
             self?.endTextField.text = mapItem.name
+            self?.endMapItem = mapItem
+            self?.refreshMap()
         }
-        
+        requestForDirections()
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -166,7 +198,7 @@ class DirectionsController: UIViewController {
         let homeCoordinate = CLLocationCoordinate2D(latitude: 41.189428, longitude: -74.053212)
         let manhattanCoordinate = CLLocationCoordinate2D(latitude: 40.765671, longitude: -73.974302)
         
-        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.09, longitudeDelta: 0.09)
+        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         let region = MKCoordinateRegion(center: manhattanCoordinate, span: coordinateSpan)
         mapView.setRegion(region, animated: true)
     }
