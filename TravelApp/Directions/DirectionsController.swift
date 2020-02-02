@@ -16,7 +16,7 @@ extension DirectionsController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let polylineRenderer = MKPolylineRenderer(overlay: overlay)
-        polylineRenderer.strokeColor = #colorLiteral(red: 0.1247136965, green: 0.5529010892, blue: 0.950386107, alpha: 1)
+        polylineRenderer.strokeColor = #colorLiteral(red: 0.1247136965, green: 0.5529010892, blue: 0.950386107, alpha: 1) // color literal
         polylineRenderer.lineWidth = 5
         return polylineRenderer
     }
@@ -46,7 +46,58 @@ class DirectionsController: UIViewController {
 
 //        setupStartEndDummyAnnotation()
 //        requestForDirections()
+        
+        setupShowRouteButton()
     }
+    
+    fileprivate func setupShowRouteButton() {
+        let showRouteButton = UIButton(title: "Show Route", titleColor: .white, font: .boldSystemFont(ofSize: 16), backgroundColor:  #colorLiteral(red: 0.1247136965, green: 0.5529010892, blue: 0.950386107, alpha: 1), target: self, action: #selector(handleShowRoute))
+        view.addSubview(showRouteButton)
+        
+        showRouteButton.anchor(top: nil, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .allSides(16), size: CGSize(width: 0, height: 50))
+        
+    }
+    
+    @objc fileprivate func handleShowRoute() {
+        let routesController = RoutesController()
+//        routesController.items = self.currentlyShowingRoute?.steps ?? []
+        routesController.items = self.currentlyShowingRoute?.steps.filter{ !$0.instructions.isEmpty } ?? []
+        present(routesController, animated: true, completion: nil)
+    }
+    
+    class RouteStepCell: LBTAListCell<MKRoute.Step> {
+        
+        let nameLabel = UILabel(text: "Name", numberOfLines: 0)
+        let distanceLabel = UILabel(text: "Distance", textAlignment: .right)
+        
+        override var item: MKRoute.Step! {
+            didSet {
+                nameLabel.text = item.instructions
+                let milesConversion = item.distance * 0.00062137
+//                distanceLabel.text = "\(milesConversion)"
+                distanceLabel.text = String(format: "%.2f mi", milesConversion)
+            }
+        }
+        
+        override func setupViews() {
+            hstack(nameLabel, distanceLabel.withWidth(80)).withMargins(.allSides(16))
+            addSeparatorView(leadingAnchor: nameLabel.leadingAnchor)
+        }
+    }
+    
+    class RoutesController: LBTAListController<RouteStepCell, MKRoute.Step>, UICollectionViewDelegateFlowLayout {
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            .init(width: view.frame.width, height: 70)
+        }
+        
+    }
+    
+    var currentlyShowingRoute: MKRoute?
     
     fileprivate func requestForDirections() {
         let request = MKDirections.Request()
@@ -78,11 +129,14 @@ class DirectionsController: UIViewController {
 //            print("route.polyline: ",route.polyline)
 
             // show all possible routes
-            response?.routes.forEach({ (route) in
-                self.mapView.addOverlay(route.polyline)
-            })
+//            response?.routes.forEach({ (route) in
+//                self.mapView.addOverlay(route.polyline)
+//            })
+            if let firstRoute = response?.routes.first {
+                self.mapView.addOverlay(firstRoute.polyline)
+            }
             
-//            self.mapView.addOverlay(route.polyline)
+            self.currentlyShowingRoute = response?.routes.first
         }
     }
     
