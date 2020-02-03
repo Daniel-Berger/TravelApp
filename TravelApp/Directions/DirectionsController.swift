@@ -60,7 +60,9 @@ class DirectionsController: UIViewController {
     
     @objc fileprivate func handleShowRoute() {
         let routesController = RoutesController()
-//        routesController.items = self.currentlyShowingRoute?.steps ?? []
+        routesController.route = currentlyShowingRoute
+        currentlyShowingRoute?.distance
+        
         routesController.items = self.currentlyShowingRoute?.steps.filter{ !$0.instructions.isEmpty } ?? []
         present(routesController, animated: true, completion: nil)
     }
@@ -85,16 +87,50 @@ class DirectionsController: UIViewController {
         }
     }
     
-    class RoutesController: LBTAListController<RouteStepCell, MKRoute.Step>, UICollectionViewDelegateFlowLayout {
+   
+    class RoutesController: LBTAListHeaderController<RouteStepCell, MKRoute.Step, RouteHeader>, UICollectionViewDelegateFlowLayout {
+        
+        var route: MKRoute!
+//        gurad let currentRoute = route else { return }
+        
+        override func setupHeader(_ header: RouteHeader) {
+            header.setupHeaderInformation(route: route)
+//            header.nameLabel.attributedText = header.generateAttributedString(title: "Route", description: route.name)
+//
+//            let milesDistance = route.distance * 0.00062137
+//            let milesString = String(format: "%.2f mi", milesDistance)
+//            header.distanceLabel.attributedText = header.generateAttributedSTring(title: "Distance", description: milesString)
+//            
+//            var timeString = ""
+//            if route.expectedTravelTime > 3600 {
+//                let h = Int(route.expectedTravelTime / 60 / 60)
+//                let m = Int((route.expectedTravelTime.truncatingRemainder(dividingBy: 60 * 60)) / 60)
+//                timeString = String(format: "%d hr %d min", h, m)
+//            } else {
+//                let time = Int(route.expectedTravelTime / 60)
+//                timeString = String (format: "%d min", time)
+//            }
+//            header.estimatedTimeLabel.attributedText =  header.generateAttributedSTring(title: "Estimated time", description: timeString)
+        }
+        
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+//            collectionView.register(<#T##viewClass: AnyClass?##AnyClass?#>, forSupplementaryViewOfKind: <#T##String#>, withReuseIdentifier: <#T##String#>)
         }
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             .init(width: view.frame.width, height: 70)
         }
         
+//        override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//
+//        }
+        
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+            .init(width: 0, height: 120)
+        }
     }
     
     var currentlyShowingRoute: MKRoute?
@@ -252,7 +288,7 @@ class DirectionsController: UIViewController {
         let homeCoordinate = CLLocationCoordinate2D(latitude: 41.189428, longitude: -74.053212)
         let manhattanCoordinate = CLLocationCoordinate2D(latitude: 40.765671, longitude: -73.974302)
         
-        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
         let region = MKCoordinateRegion(center: manhattanCoordinate, span: coordinateSpan)
         mapView.setRegion(region, animated: true)
     }

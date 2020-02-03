@@ -21,6 +21,7 @@
 		4CE2016723D6099700F3E33E /* LocationsCarouselController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2016623D6099700F3E33E /* LocationsCarouselController.swift */; };
 		4CE2016923D75C0500F3E33E /* MKMapItem+Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2016823D75C0500F3E33E /* MKMapItem+Address.swift */; };
 		4CF151EC23DF360400473D97 /* LocationSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF151EB23DF360400473D97 /* LocationSearchController.swift */; };
+		4F333C1A23E893FC00D7EEBD /* RouteHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C1923E893FC00D7EEBD /* RouteHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4CE2016623D6099700F3E33E /* LocationsCarouselController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCarouselController.swift; sourceTree = "<group>"; };
 		4CE2016823D75C0500F3E33E /* MKMapItem+Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapItem+Address.swift"; sourceTree = "<group>"; };
 		4CF151EB23DF360400473D97 /* LocationSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchController.swift; sourceTree = "<group>"; };
+		4F333C1923E893FC00D7EEBD /* RouteHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				4C42FDB523DB53DD00C10949 /* DirectionsController.swift */,
 				4CF151EB23DF360400473D97 /* LocationSearchController.swift */,
+				4F333C1923E893FC00D7EEBD /* RouteHeader.swift */,
 			);
 			path = Directions;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				4CE2016223CF739200F3E33E /* MainController.swift in Sources */,
 				4CF151EC23DF360400473D97 /* LocationSearchController.swift in Sources */,
 				4CE2014D23CF6F7A00F3E33E /* AppDelegate.swift in Sources */,
+				4F333C1A23E893FC00D7EEBD /* RouteHeader.swift in Sources */,
 				4CE2014F23CF6F7A00F3E33E /* SceneDelegate.swift in Sources */,
 				4CE2015123CF6F7A00F3E33E /* ContentView.swift in Sources */,
 			);
