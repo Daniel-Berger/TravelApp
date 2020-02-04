@@ -22,9 +22,12 @@
 		4CE2016923D75C0500F3E33E /* MKMapItem+Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2016823D75C0500F3E33E /* MKMapItem+Address.swift */; };
 		4CF151EC23DF360400473D97 /* LocationSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF151EB23DF360400473D97 /* LocationSearchController.swift */; };
 		4F333C1A23E893FC00D7EEBD /* RouteHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C1923E893FC00D7EEBD /* RouteHeader.swift */; };
+		4F333C1D23E9ED1A00D7EEBD /* InitialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C1C23E9ED1A00D7EEBD /* InitialController.swift */; };
+		5873F97455193486E54F01A1 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152624E0A96A88BE55C3CED /* Pods_TravelApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4152624E0A96A88BE55C3CED /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C42FD4923D7869E00C10949 /* pomona.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pomona.gpx; sourceTree = "<group>"; };
 		4C42FDB523DB53DD00C10949 /* DirectionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsController.swift; sourceTree = "<group>"; };
 		4CE2014923CF6F7A00F3E33E /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +42,10 @@
 		4CE2016623D6099700F3E33E /* LocationsCarouselController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCarouselController.swift; sourceTree = "<group>"; };
 		4CE2016823D75C0500F3E33E /* MKMapItem+Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapItem+Address.swift"; sourceTree = "<group>"; };
 		4CF151EB23DF360400473D97 /* LocationSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchController.swift; sourceTree = "<group>"; };
+		4CFA5F5BAB49D7506D9FFC35 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		4F333C1923E893FC00D7EEBD /* RouteHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteHeader.swift; sourceTree = "<group>"; };
+		4F333C1C23E9ED1A00D7EEBD /* InitialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialController.swift; path = TravelApp/Directions/InitialController.swift; sourceTree = SOURCE_ROOT; };
+		D1988862170581865A4725C2 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +55,22 @@
 			files = (
 				4C929A9E23E490A800A05C68 /* JGProgressHUD in Frameworks */,
 				4CE2016523CF7D6100F3E33E /* LBTATools in Frameworks */,
+				5873F97455193486E54F01A1 /* Pods_TravelApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264E457636A6EFD87F7DCCBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1988862170581865A4725C2 /* Pods-TravelApp.debug.xcconfig */,
+				4CFA5F5BAB49D7506D9FFC35 /* Pods-TravelApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4C42FDB423DB53C900C10949 /* Directions */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +87,8 @@
 				4C42FD4923D7869E00C10949 /* pomona.gpx */,
 				4CE2014B23CF6F7A00F3E33E /* TravelApp */,
 				4CE2014A23CF6F7A00F3E33E /* Products */,
+				264E457636A6EFD87F7DCCBF /* Pods */,
+				BB079D2B64AC3400FD37D3D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +103,7 @@
 		4CE2014B23CF6F7A00F3E33E /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F333C1B23E9ECFC00D7EEBD /* Initial */,
 				4C42FDB423DB53C900C10949 /* Directions */,
 				4CE2016023CF736A00F3E33E /* Main */,
 				4CE2014C23CF6F7A00F3E33E /* AppDelegate.swift */,
@@ -116,6 +135,22 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		4F333C1B23E9ECFC00D7EEBD /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				4F333C1C23E9ED1A00D7EEBD /* InitialController.swift */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		BB079D2B64AC3400FD37D3D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4152624E0A96A88BE55C3CED /* Pods_TravelApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE2015D23CF6F7E00F3E33E /* Build configuration list for PBXNativeTarget "TravelApp" */;
 			buildPhases = (
+				2B178AA5B0F4231929815031 /* [CP] Check Pods Manifest.lock */,
 				4CE2014523CF6F7A00F3E33E /* Sources */,
 				4CE2014623CF6F7A00F3E33E /* Frameworks */,
 				4CE2014723CF6F7A00F3E33E /* Resources */,
+				8FD9A15EB2A6B773F29A682B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +228,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B178AA5B0F4231929815031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD9A15EB2A6B773F29A682B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelApp/Pods-TravelApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelApp/Pods-TravelApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelApp/Pods-TravelApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CE2014523CF6F7A00F3E33E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -202,6 +281,7 @@
 				4CE2016223CF739200F3E33E /* MainController.swift in Sources */,
 				4CF151EC23DF360400473D97 /* LocationSearchController.swift in Sources */,
 				4CE2014D23CF6F7A00F3E33E /* AppDelegate.swift in Sources */,
+				4F333C1D23E9ED1A00D7EEBD /* InitialController.swift in Sources */,
 				4F333C1A23E893FC00D7EEBD /* RouteHeader.swift in Sources */,
 				4CE2014F23CF6F7A00F3E33E /* SceneDelegate.swift in Sources */,
 				4CE2015123CF6F7A00F3E33E /* ContentView.swift in Sources */,
@@ -338,6 +418,7 @@
 		};
 		4CE2015E23CF6F7E00F3E33E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1988862170581865A4725C2 /* Pods-TravelApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +439,7 @@
 		};
 		4CE2015F23CF6F7E00F3E33E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFA5F5BAB49D7506D9FFC35 /* Pods-TravelApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
