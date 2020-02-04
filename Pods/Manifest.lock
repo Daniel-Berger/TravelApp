@@ -1,16 +1,20 @@
 PODS:
   - CircleMenu (4.1.0)
+  - Pastel (0.5.1)
 
 DEPENDENCIES:
   - CircleMenu (= 4.1.0)
+  - Pastel (= 0.5.1)
 
 SPEC REPOS:
   trunk:
     - CircleMenu
+    - Pastel
 
 SPEC CHECKSUMS:
   CircleMenu: a66095199a5e26f19acbb212f077010257767fe5
+  Pastel: b3dd5b8d612dac06ae7c63c97c45c900829bc139
 
-PODFILE CHECKSUM: 45578cd18320de71fbd1a79c87d9f271cb6f0282
+PODFILE CHECKSUM: a98940a5ee596b2424195138cddcf8dd7edf2fce
 
 COCOAPODS: 1.8.4

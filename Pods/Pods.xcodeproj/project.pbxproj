@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		1B87A531D4948136141930F1A7F9073A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1EFFAD0937B879C45EF09049F769569A /* Pods-TravelApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */; };
-		2138FCFAF08CF12B3A87EC65695C1729 /* Pods-TravelApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A378B481B2C878693914B6117049A4C7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46544C2E40E219DECA263339F85EA31 /* CircleMenuLoader.swift */; };
-		A3BAAA60EF60C35899461ECF72A8769C /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58611E43AC4F6ADBD126D015109DE923 /* CircleMenuButton.swift */; };
-		A8F891F0B9AEDEF0E4D717EBCABBB007 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A637C0A7D90DF2CD1BCD09A59F9462E2 /* CircleMenu.swift */; };
-		AF87D009FC3250EEF69A2417CF5FCBF0 /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71421B11E36680F9A8E979D2F16F7B70 /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8FEE27CCE7C1BCA5DAF2FC64948743D /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B29157519B9274BDABBFCEE653E3ABA3 /* CircleMenu-dummy.m */; };
-		F418299A7F729F5D8BC35FE7129B930C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4A3AF26B5297916392D1091524253870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5F46B77615FFBDE0CFD77B8A6FEA646C /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82899B85B8CF33C96E5FD4DAB1CCFF52 /* PastelView.swift */; };
+		67F3D3F39D5D25B7E3C3A1C32F22EA39 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74937547182BA44F77C5A7E6C3E1A609 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73536303CC77F805878FD1CE109A5F51 /* Pods-TravelApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E5784B12FCB5B512CF072F1B05AF075 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B02B1157A1E87E7E81EDAF706D264F /* PastelPoint.swift */; };
+		A378B481B2C878693914B6117049A4C7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427A2709C9EC250DDEEEDEBB27269996 /* CircleMenuLoader.swift */; };
+		A3BAAA60EF60C35899461ECF72A8769C /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3470E1E9E9E32E385DFB2D1F052401F5 /* CircleMenuButton.swift */; };
+		A86D3DB0B67FF29709A36E54A00B12E0 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B694DB74B1F0AC9F0CA38C54F8C72F3 /* PastelGradient.swift */; };
+		A8F891F0B9AEDEF0E4D717EBCABBB007 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE990EEB752BCBA7F5574D7286009C /* CircleMenu.swift */; };
+		AF87D009FC3250EEF69A2417CF5FCBF0 /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC7CF3F4F5A791BDC057314DEBB1C05 /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B8D20601FF222DA61DFBEA646730BA /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8DDE2835ADD953AA31D55C563FAFE8 /* Pastel-dummy.m */; };
+		C6BFCFB2721D2029FD9184F09F7830F4 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6A1AFB7E5C22B404B0857F2335181 /* PastelLabel.swift */; };
+		C8416F967A295BA30BE9B9E07517A560 /* Pods-TravelApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */; };
+		D5E44AED525A78DF95933F3F0FB88B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E8FEE27CCE7C1BCA5DAF2FC64948743D /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5FFC7B3F9FEB944A0A9E0593E1881 /* CircleMenu-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8F2FD05907D5B27F84592FA99E98C361 /* PBXContainerItemProxy */ = {
+		69C6EA6D5F4B92AFFE739CFFCA86AAD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
+			remoteInfo = Pastel;
+		};
+		A7B6191AFFD7FCF7E732F19CD0E20830 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -29,36 +43,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1394C2D7A56AF3317EB95EBF46EC1202 /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
+		13B02B1157A1E87E7E81EDAF706D264F /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
 		251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelApp-umbrella.h"; sourceTree = "<group>"; };
 		291F47E044C08594DFBE4A7263D4B4E4 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelApp.framework; path = "Pods-TravelApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E588381779A46F6780ABA00951AE77A /* Pods-TravelApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3470E1E9E9E32E385DFB2D1F052401F5 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
 		35967B1AB77758CBB4F923E2590354E4 /* Pods-TravelApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelApp-frameworks.sh"; sourceTree = "<group>"; };
+		3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.xcconfig; sourceTree = "<group>"; };
+		427A2709C9EC250DDEEEDEBB27269996 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
 		4347E3244B13BE85481457FBA194D069 /* Pods-TravelApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-Info.plist"; sourceTree = "<group>"; };
-		43F10A80DBC315EDBBED9341C1DD48E3 /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
-		4AC831CA1982A00E046DF93C90C806D2 /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
-		4C505087D2B769D6EFECA71F9CB6392F /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleMenu.modulemap; sourceTree = "<group>"; };
-		58611E43AC4F6ADBD126D015109DE923 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
 		5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
-		71421B11E36680F9A8E979D2F16F7B70 /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
-		742C9D0918EC965BC69E443E55AA9366 /* CircleMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleMenu-Info.plist"; sourceTree = "<group>"; };
+		66C52AAF4280EADA19AFE62DB4559B22 /* Pastel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pastel-Info.plist"; sourceTree = "<group>"; };
+		70CE990EEB752BCBA7F5574D7286009C /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
+		74937547182BA44F77C5A7E6C3E1A609 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
+		7AC7CF3F4F5A791BDC057314DEBB1C05 /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
+		7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F1EB73AA0B61F4F58B33A39E0FCB51 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
+		82899B85B8CF33C96E5FD4DAB1CCFF52 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
+		8630275F7AC08246989FDB39022B1F92 /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		899AC72620FE2B816A7A2DBBDB631B95 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
+		8B694DB74B1F0AC9F0CA38C54F8C72F3 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
 		94AB54424B43FD4BE9BDF1BB533FBFD0 /* Pods-TravelApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TravelApp.modulemap"; sourceTree = "<group>"; };
+		9AF5FFC7B3F9FEB944A0A9E0593E1881 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A637C0A7D90DF2CD1BCD09A59F9462E2 /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
+		A7D0B30663BB1D12BAC9F4DAA84D6A7E /* CircleMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleMenu-Info.plist"; sourceTree = "<group>"; };
 		A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelApp-dummy.m"; sourceTree = "<group>"; };
-		B29157519B9274BDABBFCEE653E3ABA3 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
 		B620B70A05C6B3B418E1B2A54A6991FB /* Pods-TravelApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C0871AAC1F57E846603F8C4CA239EF48 /* CircleMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircleMenu.framework; path = CircleMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E46544C2E40E219DECA263339F85EA31 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
+		C8BC9928AFFEF154BC34F972F210E7CE /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleMenu.modulemap; sourceTree = "<group>"; };
+		D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
+		DC8DDE2835ADD953AA31D55C563FAFE8 /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		F1D6A1AFB7E5C22B404B0857F2335181 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10D9684CF1AE3ADB94A3C2CDB2032922 /* Frameworks */ = {
+		43EF14E3A1A05CD39BAC6C064D0D0325 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F418299A7F729F5D8BC35FE7129B930C /* Foundation.framework in Frameworks */,
+				4A3AF26B5297916392D1091524253870 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,38 +95,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		633916D43C1FED89997608449F54C7EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E44AED525A78DF95933F3F0FB88B6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		363694DB27171F8C86BCE69B8B474075 /* Products */ = {
+		1D95A195D1199DE3448658859952129C /* Pastel */ = {
+			isa = PBXGroup;
+			children = (
+				8B694DB74B1F0AC9F0CA38C54F8C72F3 /* PastelGradient.swift */,
+				F1D6A1AFB7E5C22B404B0857F2335181 /* PastelLabel.swift */,
+				13B02B1157A1E87E7E81EDAF706D264F /* PastelPoint.swift */,
+				82899B85B8CF33C96E5FD4DAB1CCFF52 /* PastelView.swift */,
+				542C3D4578E8595855B7380A10ABBD2F /* Support Files */,
+			);
+			name = Pastel;
+			path = Pastel;
+			sourceTree = "<group>";
+		};
+		498CF549C0B7978D5A8336028470763D /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				C0871AAC1F57E846603F8C4CA239EF48 /* CircleMenu.framework */,
+				7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */,
 				291F47E044C08594DFBE4A7263D4B4E4 /* Pods_TravelApp.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57908AE70B2564D2F7EF63242132CC12 /* Pods */ = {
+		542C3D4578E8595855B7380A10ABBD2F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				80D1BB3A86ACCA6CF08ECD7FEAE339E3 /* CircleMenu */,
+				899AC72620FE2B816A7A2DBBDB631B95 /* Pastel.modulemap */,
+				3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */,
+				DC8DDE2835ADD953AA31D55C563FAFE8 /* Pastel-dummy.m */,
+				66C52AAF4280EADA19AFE62DB4559B22 /* Pastel-Info.plist */,
+				8630275F7AC08246989FDB39022B1F92 /* Pastel-prefix.pch */,
+				74937547182BA44F77C5A7E6C3E1A609 /* Pastel-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Pastel";
 			sourceTree = "<group>";
 		};
-		6F44B0057888B39DA3486A57725B37BB /* Support Files */ = {
+		5C1733959D76255F65C9708B97443048 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C505087D2B769D6EFECA71F9CB6392F /* CircleMenu.modulemap */,
-				4AC831CA1982A00E046DF93C90C806D2 /* CircleMenu.xcconfig */,
-				B29157519B9274BDABBFCEE653E3ABA3 /* CircleMenu-dummy.m */,
-				742C9D0918EC965BC69E443E55AA9366 /* CircleMenu-Info.plist */,
-				43F10A80DBC315EDBBED9341C1DD48E3 /* CircleMenu-prefix.pch */,
-				71421B11E36680F9A8E979D2F16F7B70 /* CircleMenu-umbrella.h */,
+				C8BC9928AFFEF154BC34F972F210E7CE /* CircleMenu.modulemap */,
+				D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */,
+				9AF5FFC7B3F9FEB944A0A9E0593E1881 /* CircleMenu-dummy.m */,
+				A7D0B30663BB1D12BAC9F4DAA84D6A7E /* CircleMenu-Info.plist */,
+				1394C2D7A56AF3317EB95EBF46EC1202 /* CircleMenu-prefix.pch */,
+				7AC7CF3F4F5A791BDC057314DEBB1C05 /* CircleMenu-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CircleMenu";
+			sourceTree = "<group>";
+		};
+		621756EE79B55D8F557DF2EB3F045BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDF98A8794AA0D4E0B1C9E177865AD85 /* CircleMenu */,
+				1D95A195D1199DE3448658859952129C /* Pastel */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7860222075D59891D230754683C772A2 /* Targets Support Files */ = {
@@ -112,18 +174,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		80D1BB3A86ACCA6CF08ECD7FEAE339E3 /* CircleMenu */ = {
-			isa = PBXGroup;
-			children = (
-				A637C0A7D90DF2CD1BCD09A59F9462E2 /* CircleMenu.swift */,
-				58611E43AC4F6ADBD126D015109DE923 /* CircleMenuButton.swift */,
-				E46544C2E40E219DECA263339F85EA31 /* CircleMenuLoader.swift */,
-				6F44B0057888B39DA3486A57725B37BB /* Support Files */,
-			);
-			name = CircleMenu;
-			path = CircleMenu;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,13 +182,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		CDF98A8794AA0D4E0B1C9E177865AD85 /* CircleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				70CE990EEB752BCBA7F5574D7286009C /* CircleMenu.swift */,
+				3470E1E9E9E32E385DFB2D1F052401F5 /* CircleMenuButton.swift */,
+				427A2709C9EC250DDEEEDEBB27269996 /* CircleMenuLoader.swift */,
+				5C1733959D76255F65C9708B97443048 /* Support Files */,
+			);
+			name = CircleMenu;
+			path = CircleMenu;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				57908AE70B2564D2F7EF63242132CC12 /* Pods */,
-				363694DB27171F8C86BCE69B8B474075 /* Products */,
+				621756EE79B55D8F557DF2EB3F045BE0 /* Pods */,
+				498CF549C0B7978D5A8336028470763D /* Products */,
 				7860222075D59891D230754683C772A2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -179,30 +241,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49B2EB0FB40D1DF3131CDBBC8794D548 /* Headers */ = {
+		5A5B65E5AEF159B2CCD3E9A34E12F52F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2138FCFAF08CF12B3A87EC65695C1729 /* Pods-TravelApp-umbrella.h in Headers */,
+				73536303CC77F805878FD1CE109A5F51 /* Pods-TravelApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60A019DF9962A957DDF5E20FEB399E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F3D3F39D5D25B7E3C3A1C32F22EA39 /* Pastel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A6E100DEDFF2B895105EB36C356CDFAF /* Pods-TravelApp */ = {
+		223ACB2993ED61193B95A52611ED34E7 /* Pastel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94921F0FF34E327EDA6352B8DD8FCEFE /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */;
+			buildConfigurationList = 9C50A4A5CEA57821BA3CD911B290D419 /* Build configuration list for PBXNativeTarget "Pastel" */;
 			buildPhases = (
-				49B2EB0FB40D1DF3131CDBBC8794D548 /* Headers */,
-				148536CDD6D23893B9578F53E1C9557B /* Sources */,
-				10D9684CF1AE3ADB94A3C2CDB2032922 /* Frameworks */,
-				B578726A596525BC2A64614048A82EF7 /* Resources */,
+				C60A019DF9962A957DDF5E20FEB399E3 /* Headers */,
+				D5A4C040EDB49FEECE02D74495641FC7 /* Sources */,
+				633916D43C1FED89997608449F54C7EC /* Frameworks */,
+				3360140E99CC2CA2AD74233DDC25739E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				62561206D1EE6783CE017BAF8E8D2644 /* PBXTargetDependency */,
+			);
+			name = Pastel;
+			productName = Pastel;
+			productReference = 7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6E100DEDFF2B895105EB36C356CDFAF /* Pods-TravelApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E67FA394836902337361B887369453 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */;
+			buildPhases = (
+				5A5B65E5AEF159B2CCD3E9A34E12F52F /* Headers */,
+				8FBC7D06CDC8428E7871795DD062F510 /* Sources */,
+				43EF14E3A1A05CD39BAC6C064D0D0325 /* Frameworks */,
+				AE345E1FF7A8344F7FF4EC5EFAAD7B1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE50C4958BE41F77F1B11629748D151C /* PBXTargetDependency */,
+				B6F5D43B40D0CC46D3C4B75E7EBAEA5E /* PBXTargetDependency */,
 			);
 			name = "Pods-TravelApp";
 			productName = "Pods-TravelApp";
@@ -245,18 +334,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 363694DB27171F8C86BCE69B8B474075 /* Products */;
+			productRefGroup = 498CF549C0B7978D5A8336028470763D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CD7CC1435F24CFA5E3849556B94252D7 /* CircleMenu */,
+				223ACB2993ED61193B95A52611ED34E7 /* Pastel */,
 				A6E100DEDFF2B895105EB36C356CDFAF /* Pods-TravelApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B578726A596525BC2A64614048A82EF7 /* Resources */ = {
+		3360140E99CC2CA2AD74233DDC25739E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE345E1FF7A8344F7FF4EC5EFAAD7B1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,14 +370,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		148536CDD6D23893B9578F53E1C9557B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EFFAD0937B879C45EF09049F769569A /* Pods-TravelApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		824420332D5904C7425AD02BC8CE48FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,56 +381,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FBC7D06CDC8428E7871795DD062F510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8416F967A295BA30BE9B9E07517A560 /* Pods-TravelApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A4C040EDB49FEECE02D74495641FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B8D20601FF222DA61DFBEA646730BA /* Pastel-dummy.m in Sources */,
+				A86D3DB0B67FF29709A36E54A00B12E0 /* PastelGradient.swift in Sources */,
+				C6BFCFB2721D2029FD9184F09F7830F4 /* PastelLabel.swift in Sources */,
+				9E5784B12FCB5B512CF072F1B05AF075 /* PastelPoint.swift in Sources */,
+				5F46B77615FFBDE0CFD77B8A6FEA646C /* PastelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62561206D1EE6783CE017BAF8E8D2644 /* PBXTargetDependency */ = {
+		B6F5D43B40D0CC46D3C4B75E7EBAEA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pastel;
+			target = 223ACB2993ED61193B95A52611ED34E7 /* Pastel */;
+			targetProxy = 69C6EA6D5F4B92AFFE739CFFCA86AAD7 /* PBXContainerItemProxy */;
+		};
+		DE50C4958BE41F77F1B11629748D151C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CircleMenu;
 			target = CD7CC1435F24CFA5E3849556B94252D7 /* CircleMenu */;
-			targetProxy = 8F2FD05907D5B27F84592FA99E98C361 /* PBXContainerItemProxy */;
+			targetProxy = A7B6191AFFD7FCF7E732F19CD0E20830 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C446FBE637063744B9B47412D16B100 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,7 +483,78 @@
 			};
 			name = Debug;
 		};
-		C00B8AAAD7179D8EBDBB85F75FC5A74E /* Release */ = {
+		C0FC952704A71F3471FA5C4DDA685386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CircleMenu/CircleMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
+				PRODUCT_MODULE_NAME = CircleMenu;
+				PRODUCT_NAME = CircleMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C24CF1B918413783C04E1ABE3612F7F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CircleMenu/CircleMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
+				PRODUCT_MODULE_NAME = CircleMenu;
+				PRODUCT_NAME = CircleMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D19A538963F809C922D78D946BD56C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80F1EB73AA0B61F4F58B33A39E0FCB51 /* Pods-TravelApp.release.xcconfig */;
 			buildSettings = {
@@ -444,77 +592,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		C0FC952704A71F3471FA5C4DDA685386 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AC831CA1982A00E046DF93C90C806D2 /* CircleMenu.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CircleMenu/CircleMenu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
-				PRODUCT_MODULE_NAME = CircleMenu;
-				PRODUCT_NAME = CircleMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C24CF1B918413783C04E1ABE3612F7F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AC831CA1982A00E046DF93C90C806D2 /* CircleMenu.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CircleMenu/CircleMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CircleMenu/CircleMenu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CircleMenu/CircleMenu.modulemap";
-				PRODUCT_MODULE_NAME = CircleMenu;
-				PRODUCT_NAME = CircleMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -576,6 +653,115 @@
 			};
 			name = Release;
 		};
+		F95C4279A5FEB07A7C8991C8A9F937FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDC20B2A37584AA699D41C0E6067ABFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE778BFF2C1415F078C30C7403E66ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,11 +783,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94921F0FF34E327EDA6352B8DD8FCEFE /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */ = {
+		59E67FA394836902337361B887369453 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C446FBE637063744B9B47412D16B100 /* Debug */,
-				C00B8AAAD7179D8EBDBB85F75FC5A74E /* Release */,
+				F95C4279A5FEB07A7C8991C8A9F937FF /* Debug */,
+				D19A538963F809C922D78D946BD56C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C50A4A5CEA57821BA3CD911B290D419 /* Build configuration list for PBXNativeTarget "Pastel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC20B2A37584AA699D41C0E6067ABFE /* Debug */,
+				FE778BFF2C1415F078C30C7403E66ED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

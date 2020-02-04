@@ -7,8 +7,9 @@
 //
 
 import SwiftUI
-import CircleMenu
 import UIKit
+import CircleMenu
+import Pastel
 
 extension UIColor {
     static func color(_ red: Int, green: Int, blue: Int, alpha: Float) -> UIColor {
@@ -22,6 +23,8 @@ extension UIColor {
 
 class InitialController: UIViewController, CircleMenuDelegate {
     
+    var pastelView: PastelView?
+    
     let items: [(icon: String, color: UIColor)] = [
         ("icon_home", UIColor(red: 0.19, green: 0.57, blue: 1, alpha: 1)),
         ("icon_search", UIColor(red: 0.22, green: 0.74, blue: 0, alpha: 1)),
@@ -33,7 +36,26 @@ class InitialController: UIViewController, CircleMenuDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupPatel()
         setupCircleMenuButton()
+    }
+    
+    fileprivate func setupPatel() {
+        self.pastelView = PastelView(frame: view.frame)
+        
+        guard let myPastelView = pastelView else { return }
+        myPastelView.startPastelPoint = .bottomLeft
+        myPastelView.endPastelPoint = .topRight
+        myPastelView.animationDuration = 3.0
+        myPastelView.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),
+                               UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0),
+                               UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),
+                               UIColor(red: 32/255, green: 76/255, blue: 255/255, alpha: 1.0),
+                               UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1.0),
+                               UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),
+                               UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)])
+        myPastelView.startAnimation()
+        view.insertSubview(myPastelView, at: 0)
     }
     
     fileprivate func setupCircleMenuButton() {
@@ -47,7 +69,7 @@ class InitialController: UIViewController, CircleMenuDelegate {
         button.backgroundColor = UIColor.lightGray
         button.delegate = self
         button.layer.cornerRadius = button.frame.size.width / 2.0
-        view.addSubview(button)
+        pastelView!.addSubview(button)
         button.center = view.center
     }
         
@@ -80,7 +102,7 @@ class InitialController: UIViewController, CircleMenuDelegate {
              print("First Button")
              case 1:
              print("Second Button")
-             present(DirectionsController(), animated: true, completion: nil)
+            present(UINavigationController(rootViewController: DirectionsController()), animated: true, completion: nil)
              case 2:
              print("Third Button")
              case 3:
