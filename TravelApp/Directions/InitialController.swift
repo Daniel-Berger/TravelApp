@@ -24,6 +24,7 @@ extension UIColor {
 class InitialController: UIViewController, CircleMenuDelegate {
     
     var pastelView: PastelView?
+    var circleMenu: CircleMenu?
     
     let items: [(icon: String, color: UIColor)] = [
         ("icon_home", UIColor(red: 0.19, green: 0.57, blue: 1, alpha: 1)),
@@ -38,6 +39,15 @@ class InitialController: UIViewController, CircleMenuDelegate {
         
         setupPatel()
         setupCircleMenuButton()
+        callPressButton()
+    }
+    
+    fileprivate func callPressButton() {
+        perform(#selector(pressButton), with: nil, afterDelay: 2)
+    }
+    
+    @objc fileprivate func pressButton() {
+        circleMenu?.sendActions(for: .touchUpInside)
     }
     
     fileprivate func setupPatel() {
@@ -46,7 +56,7 @@ class InitialController: UIViewController, CircleMenuDelegate {
         guard let myPastelView = pastelView else { return }
         myPastelView.startPastelPoint = .bottomLeft
         myPastelView.endPastelPoint = .topRight
-        myPastelView.animationDuration = 3.0
+        myPastelView.animationDuration = 2.0
         myPastelView.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),
                                UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0),
                                UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),
@@ -59,26 +69,40 @@ class InitialController: UIViewController, CircleMenuDelegate {
     }
     
     fileprivate func setupCircleMenuButton() {
-        let button = CircleMenu(
+        
+//        guard let myCircleButton = circleMenu else { return }
+        self.circleMenu = CircleMenu(
                frame: CGRect(x: 200, y: 200, width: 60, height: 60),
                normalIcon:"icon_menu",
                selectedIcon:"icon_close",
                buttonsCount: 5,
                duration: 0.3,
-               distance: 120)
-        button.backgroundColor = UIColor.lightGray
-        button.delegate = self
-        button.layer.cornerRadius = button.frame.size.width / 2.0
-        pastelView!.addSubview(button)
-        button.center = view.center
+               distance: 120
+        )
+        circleMenu!.backgroundColor = UIColor.lightGray
+        circleMenu!.delegate = self
+        circleMenu!.layer.cornerRadius = circleMenu!.frame.size.width / 2.0
+        pastelView!.addSubview(circleMenu!)
+        circleMenu!.center = view.center
+        
+        
+//        let button = CircleMenu(
+//               frame: CGRect(x: 200, y: 200, width: 60, height: 60),
+//               normalIcon:"icon_menu",
+//               selectedIcon:"icon_close",
+//               buttonsCount: 5,
+//               duration: 0.3,
+//               distance: 120)
+//        button.backgroundColor = UIColor.lightGray
+//        button.delegate = self
+//        button.layer.cornerRadius = button.frame.size.width / 2.0
+//        pastelView!.addSubview(button)
+//        button.center = view.center
     }
         
     // configure buttons
     func circleMenu(_ circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
-        print("One")
-        
         button.backgroundColor = items[atIndex].color
-
         button.setImage(UIImage(named: items[atIndex].icon), for: .normal)
 
        // set highlited image
@@ -89,14 +113,12 @@ class InitialController: UIViewController, CircleMenuDelegate {
 
     // call before animation
     func circleMenu(_ circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
-        print("Two")
-        print("button will selected: \(atIndex)")
+        
     }
 
     // call after animation
     func circleMenu(_ circleMenu: CircleMenu, buttonDidSelected button: UIButton, atIndex: Int) {
-        print("Three")
-        
+
         switch atIndex {
              case 0:
              print("First Button")
@@ -110,7 +132,6 @@ class InitialController: UIViewController, CircleMenuDelegate {
              default:
                  ("Unknown Button")
              }
-        print("button did selected: \(atIndex)")
 
     }
 
