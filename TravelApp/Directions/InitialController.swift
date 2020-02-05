@@ -25,6 +25,7 @@ class InitialController: UIViewController, CircleMenuDelegate {
     
     var pastelView: PastelView?
     var circleMenu: CircleMenu?
+    var buttonPressed = false
     
     let items: [(icon: String, color: UIColor)] = [
         ("icon_home", UIColor(red: 0.19, green: 0.57, blue: 1, alpha: 1)),
@@ -39,11 +40,26 @@ class InitialController: UIViewController, CircleMenuDelegate {
         
         setupPatel()
         setupCircleMenuButton()
-        callPressButton()
+
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+       
+        if buttonPressed == false {
+            let timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(pressButton), userInfo: nil, repeats: false)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+//        buttonPressed = false
     }
     
     fileprivate func callPressButton() {
         perform(#selector(pressButton), with: nil, afterDelay: 2)
+        buttonPressed = true
     }
     
     @objc fileprivate func pressButton() {
@@ -124,7 +140,9 @@ class InitialController: UIViewController, CircleMenuDelegate {
              print("First Button")
              case 1:
              print("Second Button")
-            present(UINavigationController(rootViewController: DirectionsController()), animated: true, completion: nil)
+            present(UINavigationController(rootViewController: DirectionsController()), animated: true, completion:{
+                self.buttonPressed = false
+            })
              case 2:
              print("Third Button")
              case 3:
