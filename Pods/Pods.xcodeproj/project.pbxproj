@@ -8,85 +8,83 @@
 
 /* Begin PBXBuildFile section */
 		1B87A531D4948136141930F1A7F9073A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4A3AF26B5297916392D1091524253870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5F46B77615FFBDE0CFD77B8A6FEA646C /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82899B85B8CF33C96E5FD4DAB1CCFF52 /* PastelView.swift */; };
-		67F3D3F39D5D25B7E3C3A1C32F22EA39 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74937547182BA44F77C5A7E6C3E1A609 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73536303CC77F805878FD1CE109A5F51 /* Pods-TravelApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E5784B12FCB5B512CF072F1B05AF075 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B02B1157A1E87E7E81EDAF706D264F /* PastelPoint.swift */; };
-		A378B481B2C878693914B6117049A4C7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427A2709C9EC250DDEEEDEBB27269996 /* CircleMenuLoader.swift */; };
-		A3BAAA60EF60C35899461ECF72A8769C /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3470E1E9E9E32E385DFB2D1F052401F5 /* CircleMenuButton.swift */; };
-		A86D3DB0B67FF29709A36E54A00B12E0 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B694DB74B1F0AC9F0CA38C54F8C72F3 /* PastelGradient.swift */; };
-		A8F891F0B9AEDEF0E4D717EBCABBB007 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE990EEB752BCBA7F5574D7286009C /* CircleMenu.swift */; };
-		AF87D009FC3250EEF69A2417CF5FCBF0 /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC7CF3F4F5A791BDC057314DEBB1C05 /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9B8D20601FF222DA61DFBEA646730BA /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8DDE2835ADD953AA31D55C563FAFE8 /* Pastel-dummy.m */; };
-		C6BFCFB2721D2029FD9184F09F7830F4 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6A1AFB7E5C22B404B0857F2335181 /* PastelLabel.swift */; };
-		C8416F967A295BA30BE9B9E07517A560 /* Pods-TravelApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */; };
-		D5E44AED525A78DF95933F3F0FB88B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E8FEE27CCE7C1BCA5DAF2FC64948743D /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5FFC7B3F9FEB944A0A9E0593E1881 /* CircleMenu-dummy.m */; };
+		23B8ECC68A0A2B29006CEEBF04060079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		46C03D7E9BAF96E0A3323EB9BBDADF8C /* project.pbxproj in Sources */ = {isa = PBXBuildFile; fileRef = 1946E9DC296AF64060B781BBCC92A3A8 /* project.pbxproj */; };
+		4B88277B679F824AC936187AA623F44E /* Pods-TravelApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */; };
+		55C2DD12C0555C2F63105B01C5F82CD7 /* Pods-TravelApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A2C5BF114417B16B3D8260F8C7241F2 /* contents.xcworkspacedata in Sources */ = {isa = PBXBuildFile; fileRef = 1425D6A51B22E1455D6022A20D66AB7C /* contents.xcworkspacedata */; };
+		5FA08B5115A558E4C5FB3A7FD639067E /* GradientAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 001B50DD3A2EDD6C3302EAF6DAFF1C39 /* GradientAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606C057F6ABD31360C9DF359A70FC0D9 /* GradientAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C237FC1DB4DBDA8DE8F114A2429B3C /* GradientAnimator-dummy.m */; };
+		7B63AD837478F740342440E6CD879425 /* GradientAnimator.podspec in Sources */ = {isa = PBXBuildFile; fileRef = 626D469D3A46E55340D9A8312B817426 /* GradientAnimator.podspec */; };
+		8316FEC4570F63DC64F650FFF2E9C985 /* GradientAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64968E543376B34174BFD3F3EC5573AB /* GradientAnimator.swift */; };
+		965CFE2257F25BA2AB1988700C0DC7C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A378B481B2C878693914B6117049A4C7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D82256C1C83594C886D4C55657434 /* CircleMenuLoader.swift */; };
+		A3BAAA60EF60C35899461ECF72A8769C /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581040F526A56700B5B0842DCFB3453 /* CircleMenuButton.swift */; };
+		A8F891F0B9AEDEF0E4D717EBCABBB007 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBC1206E633F5C3E2F33A129875047B /* CircleMenu.swift */; };
+		AE1F060DBB5D8F583123950D08CBA26D /* GradientAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E666CC94BE67596E6DBACD823FA3AD /* GradientAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF87D009FC3250EEF69A2417CF5FCBF0 /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F95955E2DE51C8064C82BD33393C1770 /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D81B5A18824ED0CE1BB89B0BA01C7F43 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = 3BE109BF574ADC1B15481FD7F01C998A /* Podfile */; };
+		E8FEE27CCE7C1BCA5DAF2FC64948743D /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF46C963A2F7F1A5D0E97B9552781EE4 /* CircleMenu-dummy.m */; };
+		F37B474F60E857441F2B70C84648BD27 /* IDEWorkspaceChecks.plist in Sources */ = {isa = PBXBuildFile; fileRef = 83D662F854381D930CCD7CC75DEE7921 /* IDEWorkspaceChecks.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		69C6EA6D5F4B92AFFE739CFFCA86AAD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
-			remoteInfo = Pastel;
-		};
-		A7B6191AFFD7FCF7E732F19CD0E20830 /* PBXContainerItemProxy */ = {
+		26DEF359B304890A0F4E9ACC14795496 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CD7CC1435F24CFA5E3849556B94252D7;
 			remoteInfo = CircleMenu;
 		};
+		AD814CA46F2E4C7846C10D9071EAAF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E68819B18A89CCCC7E44BFE8750CD7C6;
+			remoteInfo = GradientAnimator;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1394C2D7A56AF3317EB95EBF46EC1202 /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
-		13B02B1157A1E87E7E81EDAF706D264F /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
+		001B50DD3A2EDD6C3302EAF6DAFF1C39 /* GradientAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientAnimator.h; path = GradientAnimator/GradientAnimator/GradientAnimator.h; sourceTree = "<group>"; };
+		1425D6A51B22E1455D6022A20D66AB7C /* contents.xcworkspacedata */ = {isa = PBXFileReference; includeInIndex = 1; name = contents.xcworkspacedata; path = GradientAnimator/GradientAnimator.xcodeproj/project.xcworkspace/contents.xcworkspacedata; sourceTree = "<group>"; };
+		1946E9DC296AF64060B781BBCC92A3A8 /* project.pbxproj */ = {isa = PBXFileReference; includeInIndex = 1; name = project.pbxproj; path = GradientAnimator/GradientAnimator.xcodeproj/project.pbxproj; sourceTree = "<group>"; };
+		206DF49B985555DE33A782E8589E27DF /* GradientAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientAnimator-prefix.pch"; sourceTree = "<group>"; };
+		237D82256C1C83594C886D4C55657434 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
 		251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelApp-umbrella.h"; sourceTree = "<group>"; };
 		291F47E044C08594DFBE4A7263D4B4E4 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelApp.framework; path = "Pods-TravelApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E588381779A46F6780ABA00951AE77A /* Pods-TravelApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		2EBC1206E633F5C3E2F33A129875047B /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3470E1E9E9E32E385DFB2D1F052401F5 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
 		35967B1AB77758CBB4F923E2590354E4 /* Pods-TravelApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelApp-frameworks.sh"; sourceTree = "<group>"; };
-		3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.xcconfig; sourceTree = "<group>"; };
-		427A2709C9EC250DDEEEDEBB27269996 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
+		3BE109BF574ADC1B15481FD7F01C998A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = GradientAnimator/Podfile; sourceTree = "<group>"; };
+		40D0E467B17633BF7D94045222D1042D /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleMenu.modulemap; sourceTree = "<group>"; };
 		4347E3244B13BE85481457FBA194D069 /* Pods-TravelApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-Info.plist"; sourceTree = "<group>"; };
 		5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
-		66C52AAF4280EADA19AFE62DB4559B22 /* Pastel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pastel-Info.plist"; sourceTree = "<group>"; };
-		70CE990EEB752BCBA7F5574D7286009C /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
-		74937547182BA44F77C5A7E6C3E1A609 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
-		7AC7CF3F4F5A791BDC057314DEBB1C05 /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
-		7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		626D469D3A46E55340D9A8312B817426 /* GradientAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GradientAnimator.podspec; path = GradientAnimator/GradientAnimator.podspec; sourceTree = "<group>"; };
+		64968E543376B34174BFD3F3EC5573AB /* GradientAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientAnimator.swift; path = GradientAnimator/GradientAnimator/GradientAnimator.swift; sourceTree = "<group>"; };
+		65C237FC1DB4DBDA8DE8F114A2429B3C /* GradientAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientAnimator-dummy.m"; sourceTree = "<group>"; };
+		6FD3FD4CF7355A5F8E7E9111A17ABAE2 /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
+		7A8EA0D72C4BC1CD7EA76DC092A84824 /* CircleMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleMenu-Info.plist"; sourceTree = "<group>"; };
 		80F1EB73AA0B61F4F58B33A39E0FCB51 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
-		82899B85B8CF33C96E5FD4DAB1CCFF52 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
-		8630275F7AC08246989FDB39022B1F92 /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
-		899AC72620FE2B816A7A2DBBDB631B95 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
-		8B694DB74B1F0AC9F0CA38C54F8C72F3 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
+		83D662F854381D930CCD7CC75DEE7921 /* IDEWorkspaceChecks.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = IDEWorkspaceChecks.plist; path = GradientAnimator/GradientAnimator.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist; sourceTree = "<group>"; };
+		88277EF5B1DCF981F5EF1AF13F634998 /* GradientAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GradientAnimator-Info.plist"; sourceTree = "<group>"; };
 		94AB54424B43FD4BE9BDF1BB533FBFD0 /* Pods-TravelApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TravelApp.modulemap"; sourceTree = "<group>"; };
-		9AF5FFC7B3F9FEB944A0A9E0593E1881 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7D0B30663BB1D12BAC9F4DAA84D6A7E /* CircleMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleMenu-Info.plist"; sourceTree = "<group>"; };
+		A1E666CC94BE67596E6DBACD823FA3AD /* GradientAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientAnimator-umbrella.h"; sourceTree = "<group>"; };
 		A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelApp-dummy.m"; sourceTree = "<group>"; };
+		AB35BB9382D7CF9C54700067696B83C1 /* GradientAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientAnimator.modulemap; sourceTree = "<group>"; };
 		B620B70A05C6B3B418E1B2A54A6991FB /* Pods-TravelApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C0871AAC1F57E846603F8C4CA239EF48 /* CircleMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircleMenu.framework; path = CircleMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8BC9928AFFEF154BC34F972F210E7CE /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleMenu.modulemap; sourceTree = "<group>"; };
-		D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
-		DC8DDE2835ADD953AA31D55C563FAFE8 /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
-		F1D6A1AFB7E5C22B404B0857F2335181 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
+		C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientAnimator.xcconfig; sourceTree = "<group>"; };
+		C2B4B677D0AB65E45BEF7C1DE905DAC9 /* GradientAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GradientAnimator.framework; path = GradientAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C581040F526A56700B5B0842DCFB3453 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
+		CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
+		DF46C963A2F7F1A5D0E97B9552781EE4 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
+		F95955E2DE51C8064C82BD33393C1770 /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		43EF14E3A1A05CD39BAC6C064D0D0325 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A3AF26B5297916392D1091524253870 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		47DE49791B7B0B8D97E4C7AA7023A4C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,75 +93,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		633916D43C1FED89997608449F54C7EC /* Frameworks */ = {
+		6D06AAC557752EA1572D1EF865905D74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E44AED525A78DF95933F3F0FB88B6B /* Foundation.framework in Frameworks */,
+				965CFE2257F25BA2AB1988700C0DC7C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94277F5C305379C43C6C4E8ABA63455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B8ECC68A0A2B29006CEEBF04060079 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D95A195D1199DE3448658859952129C /* Pastel */ = {
+		0102AA04B9551B80E344180D8596C329 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8B694DB74B1F0AC9F0CA38C54F8C72F3 /* PastelGradient.swift */,
-				F1D6A1AFB7E5C22B404B0857F2335181 /* PastelLabel.swift */,
-				13B02B1157A1E87E7E81EDAF706D264F /* PastelPoint.swift */,
-				82899B85B8CF33C96E5FD4DAB1CCFF52 /* PastelView.swift */,
-				542C3D4578E8595855B7380A10ABBD2F /* Support Files */,
-			);
-			name = Pastel;
-			path = Pastel;
-			sourceTree = "<group>";
-		};
-		498CF549C0B7978D5A8336028470763D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C0871AAC1F57E846603F8C4CA239EF48 /* CircleMenu.framework */,
-				7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */,
-				291F47E044C08594DFBE4A7263D4B4E4 /* Pods_TravelApp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		542C3D4578E8595855B7380A10ABBD2F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				899AC72620FE2B816A7A2DBBDB631B95 /* Pastel.modulemap */,
-				3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */,
-				DC8DDE2835ADD953AA31D55C563FAFE8 /* Pastel-dummy.m */,
-				66C52AAF4280EADA19AFE62DB4559B22 /* Pastel-Info.plist */,
-				8630275F7AC08246989FDB39022B1F92 /* Pastel-prefix.pch */,
-				74937547182BA44F77C5A7E6C3E1A609 /* Pastel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pastel";
-			sourceTree = "<group>";
-		};
-		5C1733959D76255F65C9708B97443048 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C8BC9928AFFEF154BC34F972F210E7CE /* CircleMenu.modulemap */,
-				D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */,
-				9AF5FFC7B3F9FEB944A0A9E0593E1881 /* CircleMenu-dummy.m */,
-				A7D0B30663BB1D12BAC9F4DAA84D6A7E /* CircleMenu-Info.plist */,
-				1394C2D7A56AF3317EB95EBF46EC1202 /* CircleMenu-prefix.pch */,
-				7AC7CF3F4F5A791BDC057314DEBB1C05 /* CircleMenu-umbrella.h */,
+				40D0E467B17633BF7D94045222D1042D /* CircleMenu.modulemap */,
+				CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */,
+				DF46C963A2F7F1A5D0E97B9552781EE4 /* CircleMenu-dummy.m */,
+				7A8EA0D72C4BC1CD7EA76DC092A84824 /* CircleMenu-Info.plist */,
+				6FD3FD4CF7355A5F8E7E9111A17ABAE2 /* CircleMenu-prefix.pch */,
+				F95955E2DE51C8064C82BD33393C1770 /* CircleMenu-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CircleMenu";
 			sourceTree = "<group>";
 		};
-		621756EE79B55D8F557DF2EB3F045BE0 /* Pods */ = {
+		326625A8A81E874C036686BDDAC12162 /* CircleMenu */ = {
 			isa = PBXGroup;
 			children = (
-				CDF98A8794AA0D4E0B1C9E177865AD85 /* CircleMenu */,
-				1D95A195D1199DE3448658859952129C /* Pastel */,
+				2EBC1206E633F5C3E2F33A129875047B /* CircleMenu.swift */,
+				C581040F526A56700B5B0842DCFB3453 /* CircleMenuButton.swift */,
+				237D82256C1C83594C886D4C55657434 /* CircleMenuLoader.swift */,
+				0102AA04B9551B80E344180D8596C329 /* Support Files */,
 			);
-			name = Pods;
+			name = CircleMenu;
+			path = CircleMenu;
 			sourceTree = "<group>";
 		};
 		7860222075D59891D230754683C772A2 /* Targets Support Files */ = {
@@ -174,6 +146,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		A3B939E2C857C8D782F77B16626A020A /* GradientAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				1425D6A51B22E1455D6022A20D66AB7C /* contents.xcworkspacedata */,
+				001B50DD3A2EDD6C3302EAF6DAFF1C39 /* GradientAnimator.h */,
+				626D469D3A46E55340D9A8312B817426 /* GradientAnimator.podspec */,
+				64968E543376B34174BFD3F3EC5573AB /* GradientAnimator.swift */,
+				83D662F854381D930CCD7CC75DEE7921 /* IDEWorkspaceChecks.plist */,
+				3BE109BF574ADC1B15481FD7F01C998A /* Podfile */,
+				1946E9DC296AF64060B781BBCC92A3A8 /* project.pbxproj */,
+				AA2D5768533FF0D2E4F303A3855E8ADD /* Support Files */,
+			);
+			name = GradientAnimator;
+			path = GradientAnimator;
+			sourceTree = "<group>";
+		};
+		AA2D5768533FF0D2E4F303A3855E8ADD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB35BB9382D7CF9C54700067696B83C1 /* GradientAnimator.modulemap */,
+				C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */,
+				65C237FC1DB4DBDA8DE8F114A2429B3C /* GradientAnimator-dummy.m */,
+				88277EF5B1DCF981F5EF1AF13F634998 /* GradientAnimator-Info.plist */,
+				206DF49B985555DE33A782E8589E27DF /* GradientAnimator-prefix.pch */,
+				A1E666CC94BE67596E6DBACD823FA3AD /* GradientAnimator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GradientAnimator";
+			sourceTree = "<group>";
+		};
+		B8ADED2AB609D814BF79FB858D3B6D4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0871AAC1F57E846603F8C4CA239EF48 /* CircleMenu.framework */,
+				C2B4B677D0AB65E45BEF7C1DE905DAC9 /* GradientAnimator.framework */,
+				291F47E044C08594DFBE4A7263D4B4E4 /* Pods_TravelApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,25 +194,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CDF98A8794AA0D4E0B1C9E177865AD85 /* CircleMenu */ = {
-			isa = PBXGroup;
-			children = (
-				70CE990EEB752BCBA7F5574D7286009C /* CircleMenu.swift */,
-				3470E1E9E9E32E385DFB2D1F052401F5 /* CircleMenuButton.swift */,
-				427A2709C9EC250DDEEEDEBB27269996 /* CircleMenuLoader.swift */,
-				5C1733959D76255F65C9708B97443048 /* Support Files */,
-			);
-			name = CircleMenu;
-			path = CircleMenu;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				621756EE79B55D8F557DF2EB3F045BE0 /* Pods */,
-				498CF549C0B7978D5A8336028470763D /* Products */,
+				DDB93F42CE4A47723DAE6B876CDDBAEA /* Pods */,
+				B8ADED2AB609D814BF79FB858D3B6D4E /* Products */,
 				7860222075D59891D230754683C772A2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -230,6 +230,15 @@
 			path = "Target Support Files/Pods-TravelApp";
 			sourceTree = "<group>";
 		};
+		DDB93F42CE4A47723DAE6B876CDDBAEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				326625A8A81E874C036686BDDAC12162 /* CircleMenu */,
+				A3B939E2C857C8D782F77B16626A020A /* GradientAnimator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -241,57 +250,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A5B65E5AEF159B2CCD3E9A34E12F52F /* Headers */ = {
+		3FF640998A04C3D90A25A3A4F8A8CEB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73536303CC77F805878FD1CE109A5F51 /* Pods-TravelApp-umbrella.h in Headers */,
+				55C2DD12C0555C2F63105B01C5F82CD7 /* Pods-TravelApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C60A019DF9962A957DDF5E20FEB399E3 /* Headers */ = {
+		BB234F22BC5EB4A4D2A063727DAF4A28 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67F3D3F39D5D25B7E3C3A1C32F22EA39 /* Pastel-umbrella.h in Headers */,
+				AE1F060DBB5D8F583123950D08CBA26D /* GradientAnimator-umbrella.h in Headers */,
+				5FA08B5115A558E4C5FB3A7FD639067E /* GradientAnimator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		223ACB2993ED61193B95A52611ED34E7 /* Pastel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C50A4A5CEA57821BA3CD911B290D419 /* Build configuration list for PBXNativeTarget "Pastel" */;
-			buildPhases = (
-				C60A019DF9962A957DDF5E20FEB399E3 /* Headers */,
-				D5A4C040EDB49FEECE02D74495641FC7 /* Sources */,
-				633916D43C1FED89997608449F54C7EC /* Frameworks */,
-				3360140E99CC2CA2AD74233DDC25739E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pastel;
-			productName = Pastel;
-			productReference = 7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		A6E100DEDFF2B895105EB36C356CDFAF /* Pods-TravelApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59E67FA394836902337361B887369453 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */;
+			buildConfigurationList = 8653FCEBE171267C966DD01F5379BF32 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */;
 			buildPhases = (
-				5A5B65E5AEF159B2CCD3E9A34E12F52F /* Headers */,
-				8FBC7D06CDC8428E7871795DD062F510 /* Sources */,
-				43EF14E3A1A05CD39BAC6C064D0D0325 /* Frameworks */,
-				AE345E1FF7A8344F7FF4EC5EFAAD7B1E /* Resources */,
+				3FF640998A04C3D90A25A3A4F8A8CEB3 /* Headers */,
+				3065043C0E7B5FB98D1091C2EC0C99A0 /* Sources */,
+				C94277F5C305379C43C6C4E8ABA63455 /* Frameworks */,
+				2EEB70A707F3ABCD7C8E1C9F60C7469C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE50C4958BE41F77F1B11629748D151C /* PBXTargetDependency */,
-				B6F5D43B40D0CC46D3C4B75E7EBAEA5E /* PBXTargetDependency */,
+				7CD23305855D38860BD9F4965C8F86A0 /* PBXTargetDependency */,
+				0FD1B49C35860A57D572F17DBD718362 /* PBXTargetDependency */,
 			);
 			name = "Pods-TravelApp";
 			productName = "Pods-TravelApp";
@@ -316,6 +308,24 @@
 			productReference = C0871AAC1F57E846603F8C4CA239EF48 /* CircleMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E68819B18A89CCCC7E44BFE8750CD7C6 /* GradientAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E50DAE5BD9404D59F190E048AF7FDA /* Build configuration list for PBXNativeTarget "GradientAnimator" */;
+			buildPhases = (
+				BB234F22BC5EB4A4D2A063727DAF4A28 /* Headers */,
+				577BD71351307225430D16DDA919FD39 /* Sources */,
+				6D06AAC557752EA1572D1EF865905D74 /* Frameworks */,
+				7D94BBAE63656494B1A63211681F3C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GradientAnimator;
+			productName = GradientAnimator;
+			productReference = C2B4B677D0AB65E45BEF7C1DE905DAC9 /* GradientAnimator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -334,26 +344,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 498CF549C0B7978D5A8336028470763D /* Products */;
+			productRefGroup = B8ADED2AB609D814BF79FB858D3B6D4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CD7CC1435F24CFA5E3849556B94252D7 /* CircleMenu */,
-				223ACB2993ED61193B95A52611ED34E7 /* Pastel */,
+				E68819B18A89CCCC7E44BFE8750CD7C6 /* GradientAnimator */,
 				A6E100DEDFF2B895105EB36C356CDFAF /* Pods-TravelApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3360140E99CC2CA2AD74233DDC25739E /* Resources */ = {
+		2EEB70A707F3ABCD7C8E1C9F60C7469C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE345E1FF7A8344F7FF4EC5EFAAD7B1E /* Resources */ = {
+		7D94BBAE63656494B1A63211681F3C51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,6 +380,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3065043C0E7B5FB98D1091C2EC0C99A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B88277B679F824AC936187AA623F44E /* Pods-TravelApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577BD71351307225430D16DDA919FD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2C5BF114417B16B3D8260F8C7241F2 /* contents.xcworkspacedata in Sources */,
+				606C057F6ABD31360C9DF359A70FC0D9 /* GradientAnimator-dummy.m in Sources */,
+				7B63AD837478F740342440E6CD879425 /* GradientAnimator.podspec in Sources */,
+				8316FEC4570F63DC64F650FFF2E9C985 /* GradientAnimator.swift in Sources */,
+				F37B474F60E857441F2B70C84648BD27 /* IDEWorkspaceChecks.plist in Sources */,
+				D81B5A18824ED0CE1BB89B0BA01C7F43 /* Podfile in Sources */,
+				46C03D7E9BAF96E0A3323EB9BBDADF8C /* project.pbxproj in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		824420332D5904C7425AD02BC8CE48FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,44 +413,99 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8FBC7D06CDC8428E7871795DD062F510 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8416F967A295BA30BE9B9E07517A560 /* Pods-TravelApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5A4C040EDB49FEECE02D74495641FC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9B8D20601FF222DA61DFBEA646730BA /* Pastel-dummy.m in Sources */,
-				A86D3DB0B67FF29709A36E54A00B12E0 /* PastelGradient.swift in Sources */,
-				C6BFCFB2721D2029FD9184F09F7830F4 /* PastelLabel.swift in Sources */,
-				9E5784B12FCB5B512CF072F1B05AF075 /* PastelPoint.swift in Sources */,
-				5F46B77615FFBDE0CFD77B8A6FEA646C /* PastelView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B6F5D43B40D0CC46D3C4B75E7EBAEA5E /* PBXTargetDependency */ = {
+		0FD1B49C35860A57D572F17DBD718362 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Pastel;
-			target = 223ACB2993ED61193B95A52611ED34E7 /* Pastel */;
-			targetProxy = 69C6EA6D5F4B92AFFE739CFFCA86AAD7 /* PBXContainerItemProxy */;
+			name = GradientAnimator;
+			target = E68819B18A89CCCC7E44BFE8750CD7C6 /* GradientAnimator */;
+			targetProxy = AD814CA46F2E4C7846C10D9071EAAF92 /* PBXContainerItemProxy */;
 		};
-		DE50C4958BE41F77F1B11629748D151C /* PBXTargetDependency */ = {
+		7CD23305855D38860BD9F4965C8F86A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CircleMenu;
 			target = CD7CC1435F24CFA5E3849556B94252D7 /* CircleMenu */;
-			targetProxy = A7B6191AFFD7FCF7E732F19CD0E20830 /* PBXContainerItemProxy */;
+			targetProxy = 26DEF359B304890A0F4E9ACC14795496 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		34BDDF742D99C2DC1C2B3B93240F61CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CB4A4505F5FAFBE9AFAA18CA102E37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GradientAnimator/GradientAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GradientAnimator/GradientAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GradientAnimator/GradientAnimator.modulemap";
+				PRODUCT_MODULE_NAME = GradientAnimator;
+				PRODUCT_NAME = GradientAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -483,9 +570,45 @@
 			};
 			name = Debug;
 		};
+		93B9E353658A29AF9E4AF3061B8D3605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GradientAnimator/GradientAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GradientAnimator/GradientAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GradientAnimator/GradientAnimator.modulemap";
+				PRODUCT_MODULE_NAME = GradientAnimator;
+				PRODUCT_NAME = GradientAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C0FC952704A71F3471FA5C4DDA685386 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */;
+			baseConfigurationReference = CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -521,7 +644,7 @@
 		};
 		C24CF1B918413783C04E1ABE3612F7F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1B9F9742F731D4CCD8C6448ED7591F4 /* CircleMenu.xcconfig */;
+			baseConfigurationReference = CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -554,7 +677,7 @@
 			};
 			name = Debug;
 		};
-		D19A538963F809C922D78D946BD56C6C /* Release */ = {
+		D3F1FDC970B563D39410D6E092A405D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80F1EB73AA0B61F4F58B33A39E0FCB51 /* Pods-TravelApp.release.xcconfig */;
 			buildSettings = {
@@ -653,115 +776,6 @@
 			};
 			name = Release;
 		};
-		F95C4279A5FEB07A7C8991C8A9F937FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FDC20B2A37584AA699D41C0E6067ABFE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
-				PRODUCT_MODULE_NAME = Pastel;
-				PRODUCT_NAME = Pastel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FE778BFF2C1415F078C30C7403E66ED6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A4DE51D74122CDDFD2F5E83ADA3C77E /* Pastel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
-				PRODUCT_MODULE_NAME = Pastel;
-				PRODUCT_NAME = Pastel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -770,6 +784,15 @@
 			buildConfigurations = (
 				C24CF1B918413783C04E1ABE3612F7F8 /* Debug */,
 				C0FC952704A71F3471FA5C4DDA685386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21E50DAE5BD9404D59F190E048AF7FDA /* Build configuration list for PBXNativeTarget "GradientAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B9E353658A29AF9E4AF3061B8D3605 /* Debug */,
+				8CB4A4505F5FAFBE9AFAA18CA102E37A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -783,20 +806,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59E67FA394836902337361B887369453 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */ = {
+		8653FCEBE171267C966DD01F5379BF32 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F95C4279A5FEB07A7C8991C8A9F937FF /* Debug */,
-				D19A538963F809C922D78D946BD56C6C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C50A4A5CEA57821BA3CD911B290D419 /* Build configuration list for PBXNativeTarget "Pastel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDC20B2A37584AA699D41C0E6067ABFE /* Debug */,
-				FE778BFF2C1415F078C30C7403E66ED6 /* Release */,
+				34BDDF742D99C2DC1C2B3B93240F61CF /* Debug */,
+				D3F1FDC970B563D39410D6E092A405D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

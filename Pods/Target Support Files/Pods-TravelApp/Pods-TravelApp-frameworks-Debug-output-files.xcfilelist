@@ -1,2 +1,2 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleMenu.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientAnimator.framework

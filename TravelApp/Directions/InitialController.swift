@@ -9,7 +9,7 @@
 import SwiftUI
 import UIKit
 import CircleMenu
-import Pastel
+import GradientAnimator
 
 extension UIColor {
     static func color(_ red: Int, green: Int, blue: Int, alpha: Float) -> UIColor {
@@ -19,13 +19,18 @@ extension UIColor {
             blue: 1.0 / 255.0 * CGFloat(blue),
             alpha: CGFloat(alpha))
     }
+    
+//    inputColors: [#colorLiteral(red: 0.9195817113, green: 0.04345837981, blue: 0.7682360411, alpha: 1),#colorLiteral(red: 0.1406921148, green: 0.05199617893, blue: 0.8817588687, alpha: 1),#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1),#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1),#colorLiteral(red: 0.9725490196, green: 0.7647058824, blue: 0.8039215686, alpha: 1)]
+    
+//    inputColors: [#colorLiteral(red: 0.9195817113, green: 0.04345837981, blue: 0.7682360411, alpha: 1),#colorLiteral(red: 0.1406921148, green: 0.05199617893, blue: 0.8817588687, alpha: 1),#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1),#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1),#colorLiteral(red: 0.9725490196, green: 0.7647058824, blue: 0.8039215686, alpha: 1)]
 }
 
 class InitialController: UIViewController, CircleMenuDelegate {
     
-    var pastelView: PastelView?
+    var gradientView: GradientAnimator?
     var circleMenu: CircleMenu?
     var buttonPressed = false
+    
     
     let items: [(icon: String, color: UIColor)] = [
         ("icon_home", UIColor(red: 0.19, green: 0.57, blue: 1, alpha: 1)),
@@ -38,23 +43,38 @@ class InitialController: UIViewController, CircleMenuDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupPatel()
-        setupCircleMenuButton()
-
-
+        setupGradientAnimator()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-       
+
+        setupCircleMenuButton()
+        setupWelcomeLabel()
         if buttonPressed == false {
             let timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(pressButton), userInfo: nil, repeats: false)
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(resetup), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+
+    @objc fileprivate func resetup() {
+        print("woohoo!")
+        setupCircleMenuButton()
+        setupWelcomeLabel()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
-//        buttonPressed = false
+    fileprivate func setupWelcomeLabel() {
+        let label = UILabel(text: "Explore New York City", font: UIFont.boldSystemFont(ofSize: 24), textColor: .white, textAlignment: .center, numberOfLines: 1)
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        gradientView?.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.topAnchor.constraint(equalTo: gradientView!.topAnchor, constant: 100),
+            label.widthAnchor.constraint(equalToConstant: 300),
+            label.centerXAnchor.constraint(equalTo: gradientView!.centerXAnchor)
+        ])
+        
     }
     
     fileprivate func callPressButton() {
@@ -66,27 +86,21 @@ class InitialController: UIViewController, CircleMenuDelegate {
         circleMenu?.sendActions(for: .touchUpInside)
     }
     
-    fileprivate func setupPatel() {
-        self.pastelView = PastelView(frame: view.frame)
-        
-        guard let myPastelView = pastelView else { return }
-        myPastelView.startPastelPoint = .bottomLeft
-        myPastelView.endPastelPoint = .topRight
-        myPastelView.animationDuration = 2.0
-        myPastelView.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),
-                               UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0),
-                               UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),
-                               UIColor(red: 32/255, green: 76/255, blue: 255/255, alpha: 1.0),
-                               UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1.0),
-                               UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),
-                               UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)])
-        myPastelView.startAnimation()
-        view.insertSubview(myPastelView, at: 0)
+    fileprivate func setupGradientAnimator() {
+        self.gradientView = GradientAnimator(
+            frame: view.frame,
+            theme: GradientThemes.Sunrise,
+            _startPoint: GradientPoints.bottomLeft,
+            _endPoint: GradientPoints.topRight,
+            _animationDuration: 1.0
+        )
+
+        self.view.insertSubview(gradientView!, at: 0)
+        gradientView?.startAnimate()
     }
     
     fileprivate func setupCircleMenuButton() {
         
-//        guard let myCircleButton = circleMenu else { return }
         self.circleMenu = CircleMenu(
                frame: CGRect(x: 200, y: 200, width: 60, height: 60),
                normalIcon:"icon_menu",
@@ -98,59 +112,39 @@ class InitialController: UIViewController, CircleMenuDelegate {
         circleMenu!.backgroundColor = UIColor.lightGray
         circleMenu!.delegate = self
         circleMenu!.layer.cornerRadius = circleMenu!.frame.size.width / 2.0
-        pastelView!.addSubview(circleMenu!)
+        gradientView!.addSubview(circleMenu!)
         circleMenu!.center = view.center
-        
-        
-//        let button = CircleMenu(
-//               frame: CGRect(x: 200, y: 200, width: 60, height: 60),
-//               normalIcon:"icon_menu",
-//               selectedIcon:"icon_close",
-//               buttonsCount: 5,
-//               duration: 0.3,
-//               distance: 120)
-//        button.backgroundColor = UIColor.lightGray
-//        button.delegate = self
-//        button.layer.cornerRadius = button.frame.size.width / 2.0
-//        pastelView!.addSubview(button)
-//        button.center = view.center
     }
         
-    // configure buttons
     func circleMenu(_ circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
         button.backgroundColor = items[atIndex].color
         button.setImage(UIImage(named: items[atIndex].icon), for: .normal)
 
-       // set highlited image
         let highlightedImage = UIImage(named: items[atIndex].icon)?.withRenderingMode(.alwaysTemplate)
         button.setImage(highlightedImage, for: .highlighted)
         button.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
     }
 
-    // call before animation
-    func circleMenu(_ circleMenu: CircleMenu, buttonWillSelected button: UIButton, atIndex: Int) {
-        
-    }
-
-    // call after animation
     func circleMenu(_ circleMenu: CircleMenu, buttonDidSelected button: UIButton, atIndex: Int) {
 
         switch atIndex {
              case 0:
-             print("First Button")
+                print("First Button")
              case 1:
-             print("Second Button")
-            present(UINavigationController(rootViewController: DirectionsController()), animated: true, completion:{
-                self.buttonPressed = false
-            })
+                print("Second Button")
+                present(UINavigationController(rootViewController: DirectionsController()),            animated: true, completion:{
+                    self.buttonPressed = false
+                })
              case 2:
-             print("Third Button")
+                print("Third Button")
              case 3:
-             print("Fourth Button")
-             default:
+                print("Fourth Button")
+            case 4:
+                print("Fifth Button")
+                present(MainController(), animated: true, completion: nil)
+            default:
                  ("Unknown Button")
-             }
-
+            }
     }
 
     // call upon cancel of the menu - fires immediately on button press
@@ -164,8 +158,6 @@ class InitialController: UIViewController, CircleMenuDelegate {
     }
     
 }
-
-
 
 struct InitialController_Previews: PreviewProvider {
       static var previews: some View {

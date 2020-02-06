@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "223ACB2993ED61193B95A52611ED34E7"
-               BuildableName = "Pastel.framework"
-               BlueprintName = "Pastel"
+               BlueprintIdentifier = "E68819B18A89CCCC7E44BFE8750CD7C6"
+               BuildableName = "GradientAnimator.framework"
+               BlueprintName = "GradientAnimator"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

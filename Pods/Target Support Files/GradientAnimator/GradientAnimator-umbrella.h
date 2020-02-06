@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "GradientAnimator.h"
 
-FOUNDATION_EXPORT double PastelVersionNumber;
-FOUNDATION_EXPORT const unsigned char PastelVersionString[];
+FOUNDATION_EXPORT double GradientAnimatorVersionNumber;
+FOUNDATION_EXPORT const unsigned char GradientAnimatorVersionString[];
 

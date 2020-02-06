@@ -7,6 +7,7 @@ target 'TravelApp' do
 
   # Pods for TravelApp
 	pod 'CircleMenu', '4.1.0'
-	pod 'Pastel', '0.5.1'
-
+	#pod 'Pastel', '0.5.1'
+  pod 'GradientAnimator', '~> 1.0.2' 
+  
 end

@@ -1,20 +1,20 @@
 PODS:
   - CircleMenu (4.1.0)
-  - Pastel (0.5.1)
+  - GradientAnimator (1.0.2)
 
 DEPENDENCIES:
   - CircleMenu (= 4.1.0)
-  - Pastel (= 0.5.1)
+  - GradientAnimator (~> 1.0.2)
 
 SPEC REPOS:
   trunk:
     - CircleMenu
-    - Pastel
+    - GradientAnimator
 
 SPEC CHECKSUMS:
   CircleMenu: a66095199a5e26f19acbb212f077010257767fe5
-  Pastel: b3dd5b8d612dac06ae7c63c97c45c900829bc139
+  GradientAnimator: d0d2f704ef87e1cd4cde783e00c18ddb73efd47a
 
-PODFILE CHECKSUM: a98940a5ee596b2424195138cddcf8dd7edf2fce
+PODFILE CHECKSUM: c3c60af49d4f174cd0361ae8748a433e4decac94
 
 COCOAPODS: 1.8.4
