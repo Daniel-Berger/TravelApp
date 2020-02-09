@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        GMSPlacesClient.provideAPIKey("AIzaSyD2axkN39XkuNMLAT2OR13pqEK8UQW4SaY")
+        
         return true
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        // resign mapkit
     }
 
     // MARK: UISceneSession Lifecycle

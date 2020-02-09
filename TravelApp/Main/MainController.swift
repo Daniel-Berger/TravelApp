@@ -147,7 +147,7 @@ class MainController: UIViewController {
         let homeCoordinate = CLLocationCoordinate2D(latitude: 41.189428, longitude: -74.053212)
         let manhattanCoordinate = CLLocationCoordinate2D(latitude: 40.765671, longitude: -73.974302)
         
-        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.09, longitudeDelta: 0.09)
+        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         
         let region = MKCoordinateRegion(center: manhattanCoordinate, span: coordinateSpan)
         

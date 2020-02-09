@@ -55,6 +55,7 @@ class InitialController: UIViewController, CircleMenuDelegate {
             let timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(pressButton), userInfo: nil, repeats: false)
         }
         
+        
         NotificationCenter.default.addObserver(self, selector: #selector(resetup), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
 
@@ -130,6 +131,7 @@ class InitialController: UIViewController, CircleMenuDelegate {
         switch atIndex {
              case 0:
                 print("First Button")
+                present(MainController(), animated: true, completion: nil)
              case 1:
                 print("Second Button")
                 present(UINavigationController(rootViewController: DirectionsController()),            animated: true, completion:{
@@ -141,7 +143,7 @@ class InitialController: UIViewController, CircleMenuDelegate {
                 print("Fourth Button")
             case 4:
                 print("Fifth Button")
-                present(MainController(), animated: true, completion: nil)
+                present(PlacesController(), animated: true, completion: nil)
             default:
                  ("Unknown Button")
             }

@@ -288,7 +288,7 @@ class DirectionsController: UIViewController {
         let homeCoordinate = CLLocationCoordinate2D(latitude: 41.189428, longitude: -74.053212)
         let manhattanCoordinate = CLLocationCoordinate2D(latitude: 40.765671, longitude: -73.974302)
         
-        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
+        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         let region = MKCoordinateRegion(center: manhattanCoordinate, span: coordinateSpan)
         mapView.setRegion(region, animated: true)
     }

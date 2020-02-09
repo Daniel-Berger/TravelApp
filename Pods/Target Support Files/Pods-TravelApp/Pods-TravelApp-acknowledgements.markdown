@@ -27,6 +27,14 @@ SOFTWARE.
 
 
 
+## GoogleMaps
+
+Copyright 2019 Google
+
+## GooglePlaces
+
+Copyright 2019 Google
+
 ## GradientAnimator
 
 MIT License

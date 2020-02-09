@@ -6,37 +6,80 @@
 	objectVersion = 52;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2FC2AC47FDB0310285CE777F18CD1532 /* Build configuration list for PBXAggregateTarget "GooglePlaces" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D42315111F400C0605ACCD6B5CAF2178 /* PBXTargetDependency */,
+			);
+			name = GooglePlaces;
+		};
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1B87A531D4948136141930F1A7F9073A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		23B8ECC68A0A2B29006CEEBF04060079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		46C03D7E9BAF96E0A3323EB9BBDADF8C /* project.pbxproj in Sources */ = {isa = PBXBuildFile; fileRef = 1946E9DC296AF64060B781BBCC92A3A8 /* project.pbxproj */; };
-		4B88277B679F824AC936187AA623F44E /* Pods-TravelApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */; };
-		55C2DD12C0555C2F63105B01C5F82CD7 /* Pods-TravelApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A2C5BF114417B16B3D8260F8C7241F2 /* contents.xcworkspacedata in Sources */ = {isa = PBXBuildFile; fileRef = 1425D6A51B22E1455D6022A20D66AB7C /* contents.xcworkspacedata */; };
-		5FA08B5115A558E4C5FB3A7FD639067E /* GradientAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 001B50DD3A2EDD6C3302EAF6DAFF1C39 /* GradientAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		606C057F6ABD31360C9DF359A70FC0D9 /* GradientAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C237FC1DB4DBDA8DE8F114A2429B3C /* GradientAnimator-dummy.m */; };
-		7B63AD837478F740342440E6CD879425 /* GradientAnimator.podspec in Sources */ = {isa = PBXBuildFile; fileRef = 626D469D3A46E55340D9A8312B817426 /* GradientAnimator.podspec */; };
-		8316FEC4570F63DC64F650FFF2E9C985 /* GradientAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64968E543376B34174BFD3F3EC5573AB /* GradientAnimator.swift */; };
+		2BD4237E6E54BC9FF4ADFA7B0FA2C04D /* Pods-TravelApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE465047C3ADF5D322E8E6D284E9D2B1 /* Pods-TravelApp-dummy.m */; };
+		46C03D7E9BAF96E0A3323EB9BBDADF8C /* project.pbxproj in Sources */ = {isa = PBXBuildFile; fileRef = 6917FA1AD83EDC14E1A027D9DAC807BF /* project.pbxproj */; };
+		5A2C5BF114417B16B3D8260F8C7241F2 /* contents.xcworkspacedata in Sources */ = {isa = PBXBuildFile; fileRef = 8CDAD51497E3D44384648B0341AA5C45 /* contents.xcworkspacedata */; };
+		5FA08B5115A558E4C5FB3A7FD639067E /* GradientAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8614C99087B9FB0071B0AF54560100CB /* GradientAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606C057F6ABD31360C9DF359A70FC0D9 /* GradientAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2A236A8DBD8257498A754C9BECD4D /* GradientAnimator-dummy.m */; };
+		7B63AD837478F740342440E6CD879425 /* GradientAnimator.podspec in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB63D4B8E1478A89C9009C66E135B7 /* GradientAnimator.podspec */; };
+		8316FEC4570F63DC64F650FFF2E9C985 /* GradientAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D33C1E215A3B6AB74C442BD91BB604 /* GradientAnimator.swift */; };
+		8C355AAE18770B51CB1D9F3505ED26A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		965CFE2257F25BA2AB1988700C0DC7C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A378B481B2C878693914B6117049A4C7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D82256C1C83594C886D4C55657434 /* CircleMenuLoader.swift */; };
-		A3BAAA60EF60C35899461ECF72A8769C /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581040F526A56700B5B0842DCFB3453 /* CircleMenuButton.swift */; };
-		A8F891F0B9AEDEF0E4D717EBCABBB007 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBC1206E633F5C3E2F33A129875047B /* CircleMenu.swift */; };
-		AE1F060DBB5D8F583123950D08CBA26D /* GradientAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E666CC94BE67596E6DBACD823FA3AD /* GradientAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF87D009FC3250EEF69A2417CF5FCBF0 /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F95955E2DE51C8064C82BD33393C1770 /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D81B5A18824ED0CE1BB89B0BA01C7F43 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = 3BE109BF574ADC1B15481FD7F01C998A /* Podfile */; };
-		E8FEE27CCE7C1BCA5DAF2FC64948743D /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF46C963A2F7F1A5D0E97B9552781EE4 /* CircleMenu-dummy.m */; };
-		F37B474F60E857441F2B70C84648BD27 /* IDEWorkspaceChecks.plist in Sources */ = {isa = PBXBuildFile; fileRef = 83D662F854381D930CCD7CC75DEE7921 /* IDEWorkspaceChecks.plist */; };
+		A378B481B2C878693914B6117049A4C7 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EEE78B146BF1C1CB7BA1C326A211A /* CircleMenuLoader.swift */; };
+		A3BAAA60EF60C35899461ECF72A8769C /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE430A53178F4B22CAE7C5440784F33 /* CircleMenuButton.swift */; };
+		A8F891F0B9AEDEF0E4D717EBCABBB007 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32D6F56D04CD831C3B4CBAF029B664 /* CircleMenu.swift */; };
+		AE1F060DBB5D8F583123950D08CBA26D /* GradientAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB2ED1DFA013E022E45595AC6B7F16D /* GradientAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF87D009FC3250EEF69A2417CF5FCBF0 /* CircleMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9ABDA97B584FFE2CA0FB74B0DC0FA /* CircleMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D893350725A56614C46367E432F1FF /* Pods-TravelApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD84C9270B97F042D58B1CE6D98C13C0 /* Pods-TravelApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D81B5A18824ED0CE1BB89B0BA01C7F43 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = F11D1EA407A78A780F8ECA803047E0EB /* Podfile */; };
+		E8FEE27CCE7C1BCA5DAF2FC64948743D /* CircleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98233AA7EFD13CC9796EA1B8363610F7 /* CircleMenu-dummy.m */; };
+		F37B474F60E857441F2B70C84648BD27 /* IDEWorkspaceChecks.plist in Sources */ = {isa = PBXBuildFile; fileRef = C266D7D99E99DC0F42E1494EFEC3118F /* IDEWorkspaceChecks.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		26DEF359B304890A0F4E9ACC14795496 /* PBXContainerItemProxy */ = {
+		2220CE632ACA6E5E05BA30900DE58010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		37CFA3537D2DE0EA666D931FE0424FD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CD7CC1435F24CFA5E3849556B94252D7;
 			remoteInfo = CircleMenu;
 		};
-		AD814CA46F2E4C7846C10D9071EAAF92 /* PBXContainerItemProxy */ = {
+		6EB1C2DD30E6564FC3135C9E8002D8F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		7116037E74B66E584E737D516DF4F3ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		B452603B6DDF0E7F6AA4287ABAC70868 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -46,42 +89,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001B50DD3A2EDD6C3302EAF6DAFF1C39 /* GradientAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientAnimator.h; path = GradientAnimator/GradientAnimator/GradientAnimator.h; sourceTree = "<group>"; };
-		1425D6A51B22E1455D6022A20D66AB7C /* contents.xcworkspacedata */ = {isa = PBXFileReference; includeInIndex = 1; name = contents.xcworkspacedata; path = GradientAnimator/GradientAnimator.xcodeproj/project.xcworkspace/contents.xcworkspacedata; sourceTree = "<group>"; };
-		1946E9DC296AF64060B781BBCC92A3A8 /* project.pbxproj */ = {isa = PBXFileReference; includeInIndex = 1; name = project.pbxproj; path = GradientAnimator/GradientAnimator.xcodeproj/project.pbxproj; sourceTree = "<group>"; };
-		206DF49B985555DE33A782E8589E27DF /* GradientAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientAnimator-prefix.pch"; sourceTree = "<group>"; };
-		237D82256C1C83594C886D4C55657434 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
-		251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelApp-umbrella.h"; sourceTree = "<group>"; };
+		0BC2A236A8DBD8257498A754C9BECD4D /* GradientAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientAnimator-dummy.m"; sourceTree = "<group>"; };
+		0FFB63D4B8E1478A89C9009C66E135B7 /* GradientAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GradientAnimator.podspec; path = GradientAnimator/GradientAnimator.podspec; sourceTree = "<group>"; };
+		14CF65C38554156E7991A371FFE65C87 /* GradientAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientAnimator.modulemap; sourceTree = "<group>"; };
+		1E9C8D3C166009AF314460B047C2EC44 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		1FB9ABDA97B584FFE2CA0FB74B0DC0FA /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
+		264F2EF7AB1887FE099098E4A12CB257 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		28BEAC6B18DE522C4B0372670CCEA9BE /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
 		291F47E044C08594DFBE4A7263D4B4E4 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelApp.framework; path = "Pods-TravelApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E588381779A46F6780ABA00951AE77A /* Pods-TravelApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		2EBC1206E633F5C3E2F33A129875047B /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
+		2D77EE71E41856EC7EBBE20FEB463784 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		35967B1AB77758CBB4F923E2590354E4 /* Pods-TravelApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelApp-frameworks.sh"; sourceTree = "<group>"; };
-		3BE109BF574ADC1B15481FD7F01C998A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = GradientAnimator/Podfile; sourceTree = "<group>"; };
-		40D0E467B17633BF7D94045222D1042D /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleMenu.modulemap; sourceTree = "<group>"; };
-		4347E3244B13BE85481457FBA194D069 /* Pods-TravelApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-Info.plist"; sourceTree = "<group>"; };
-		5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
-		626D469D3A46E55340D9A8312B817426 /* GradientAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GradientAnimator.podspec; path = GradientAnimator/GradientAnimator.podspec; sourceTree = "<group>"; };
-		64968E543376B34174BFD3F3EC5573AB /* GradientAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientAnimator.swift; path = GradientAnimator/GradientAnimator/GradientAnimator.swift; sourceTree = "<group>"; };
-		65C237FC1DB4DBDA8DE8F114A2429B3C /* GradientAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientAnimator-dummy.m"; sourceTree = "<group>"; };
-		6FD3FD4CF7355A5F8E7E9111A17ABAE2 /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
-		7A8EA0D72C4BC1CD7EA76DC092A84824 /* CircleMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleMenu-Info.plist"; sourceTree = "<group>"; };
-		80F1EB73AA0B61F4F58B33A39E0FCB51 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
-		83D662F854381D930CCD7CC75DEE7921 /* IDEWorkspaceChecks.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = IDEWorkspaceChecks.plist; path = GradientAnimator/GradientAnimator.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist; sourceTree = "<group>"; };
-		88277EF5B1DCF981F5EF1AF13F634998 /* GradientAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GradientAnimator-Info.plist"; sourceTree = "<group>"; };
-		94AB54424B43FD4BE9BDF1BB533FBFD0 /* Pods-TravelApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TravelApp.modulemap"; sourceTree = "<group>"; };
+		3CF6365E3A12DF79AA4BBD60F97655BA /* GradientAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientAnimator.xcconfig; sourceTree = "<group>"; };
+		40D2E9A66BECBE95D99750B79C8A3EB4 /* CircleMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleMenu.modulemap; sourceTree = "<group>"; };
+		51F5AB7A18B0E285062543566CEC69BB /* Pods-TravelApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelApp-resources.sh"; sourceTree = "<group>"; };
+		584828BAF0A7F380AA32A87BDF0B4C68 /* Pods-TravelApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-Info.plist"; sourceTree = "<group>"; };
+		58F76FDA4111D446813DA92E888C3938 /* CircleMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CircleMenu-Info.plist"; sourceTree = "<group>"; };
+		593D0C86897E15E03D239ECF37B104A9 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		5B9AA3D49B55F1C48C8F8A038575FBA5 /* GooglePlaces.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.xcconfig; sourceTree = "<group>"; };
+		5EB2ED1DFA013E022E45595AC6B7F16D /* GradientAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientAnimator-umbrella.h"; sourceTree = "<group>"; };
+		65E92B7CA7FBEE6781F689DFC3AE7C3D /* CircleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-prefix.pch"; sourceTree = "<group>"; };
+		68E6B1AA8DDC80BEE4900D98A40B9AE9 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		6917FA1AD83EDC14E1A027D9DAC807BF /* project.pbxproj */ = {isa = PBXFileReference; includeInIndex = 1; name = project.pbxproj; path = GradientAnimator/GradientAnimator.xcodeproj/project.pbxproj; sourceTree = "<group>"; };
+		7156E214D19EAD93546D3B47B57C81AB /* GradientAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientAnimator-prefix.pch"; sourceTree = "<group>"; };
+		7698AD88CBD9906FE1F0F5813503A921 /* Pods-TravelApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TravelApp.modulemap"; sourceTree = "<group>"; };
+		7B264E7DB8DBF4B3C3081AECCFCA15DB /* Pods-TravelApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelApp-frameworks.sh"; sourceTree = "<group>"; };
+		7BF1B0CCF3D36E7A64D7FC4B48C7A555 /* Pods-TravelApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		82D33C1E215A3B6AB74C442BD91BB604 /* GradientAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientAnimator.swift; path = GradientAnimator/GradientAnimator/GradientAnimator.swift; sourceTree = "<group>"; };
+		8614C99087B9FB0071B0AF54560100CB /* GradientAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientAnimator.h; path = GradientAnimator/GradientAnimator/GradientAnimator.h; sourceTree = "<group>"; };
+		8CDAD51497E3D44384648B0341AA5C45 /* contents.xcworkspacedata */ = {isa = PBXFileReference; includeInIndex = 1; name = contents.xcworkspacedata; path = GradientAnimator/GradientAnimator.xcodeproj/project.xcworkspace/contents.xcworkspacedata; sourceTree = "<group>"; };
+		9307A64273DB935933B8E7CF8865BC89 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		93E62F843A7C8BE4A56F16C7D3C7F6E6 /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		98233AA7EFD13CC9796EA1B8363610F7 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1E666CC94BE67596E6DBACD823FA3AD /* GradientAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientAnimator-umbrella.h"; sourceTree = "<group>"; };
-		A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelApp-dummy.m"; sourceTree = "<group>"; };
-		AB35BB9382D7CF9C54700067696B83C1 /* GradientAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientAnimator.modulemap; sourceTree = "<group>"; };
-		B620B70A05C6B3B418E1B2A54A6991FB /* Pods-TravelApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9FE31C446CB3B56E9B11D6D13C38B1B2 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
+		ABE430A53178F4B22CAE7C5440784F33 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
+		AFD0EC88738A5D8A4AE1D5039FC08954 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		BE32D6F56D04CD831C3B4CBAF029B664 /* CircleMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = CircleMenuLib/CircleMenu.swift; sourceTree = "<group>"; };
 		C0871AAC1F57E846603F8C4CA239EF48 /* CircleMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircleMenu.framework; path = CircleMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientAnimator.xcconfig; sourceTree = "<group>"; };
+		C266D7D99E99DC0F42E1494EFEC3118F /* IDEWorkspaceChecks.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = IDEWorkspaceChecks.plist; path = GradientAnimator/GradientAnimator.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist; sourceTree = "<group>"; };
 		C2B4B677D0AB65E45BEF7C1DE905DAC9 /* GradientAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GradientAnimator.framework; path = GradientAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C581040F526A56700B5B0842DCFB3453 /* CircleMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = CircleMenuLib/CircleMenuButton/CircleMenuButton.swift; sourceTree = "<group>"; };
-		CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleMenu.xcconfig; sourceTree = "<group>"; };
-		DF46C963A2F7F1A5D0E97B9552781EE4 /* CircleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleMenu-dummy.m"; sourceTree = "<group>"; };
-		F95955E2DE51C8064C82BD33393C1770 /* CircleMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleMenu-umbrella.h"; sourceTree = "<group>"; };
+		D08EEE78B146BF1C1CB7BA1C326A211A /* CircleMenuLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift; sourceTree = "<group>"; };
+		DD84C9270B97F042D58B1CE6D98C13C0 /* Pods-TravelApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelApp-umbrella.h"; sourceTree = "<group>"; };
+		DE465047C3ADF5D322E8E6D284E9D2B1 /* Pods-TravelApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelApp-dummy.m"; sourceTree = "<group>"; };
+		E044F207D99EFED8D74BB453E0A85B76 /* Pods-TravelApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		F11D1EA407A78A780F8ECA803047E0EB /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = GradientAnimator/Podfile; sourceTree = "<group>"; };
+		FC8D61FC858402A4028227E0D334365E /* GradientAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GradientAnimator-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,79 +153,150 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C94277F5C305379C43C6C4E8ABA63455 /* Frameworks */ = {
+		9A1FA28075F3B6FE49BB3554DFFE8D5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B8ECC68A0A2B29006CEEBF04060079 /* Foundation.framework in Frameworks */,
+				8C355AAE18770B51CB1D9F3505ED26A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0102AA04B9551B80E344180D8596C329 /* Support Files */ = {
+		02798B7F222088EC1607560079515CA1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				40D0E467B17633BF7D94045222D1042D /* CircleMenu.modulemap */,
-				CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */,
-				DF46C963A2F7F1A5D0E97B9552781EE4 /* CircleMenu-dummy.m */,
-				7A8EA0D72C4BC1CD7EA76DC092A84824 /* CircleMenu-Info.plist */,
-				6FD3FD4CF7355A5F8E7E9111A17ABAE2 /* CircleMenu-prefix.pch */,
-				F95955E2DE51C8064C82BD33393C1770 /* CircleMenu-umbrella.h */,
+				5B9AA3D49B55F1C48C8F8A038575FBA5 /* GooglePlaces.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CircleMenu";
+			path = "../Target Support Files/GooglePlaces";
 			sourceTree = "<group>";
 		};
-		326625A8A81E874C036686BDDAC12162 /* CircleMenu */ = {
+		0447082D50C4AD0C78F3634030881B41 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2EBC1206E633F5C3E2F33A129875047B /* CircleMenu.swift */,
-				C581040F526A56700B5B0842DCFB3453 /* CircleMenuButton.swift */,
-				237D82256C1C83594C886D4C55657434 /* CircleMenuLoader.swift */,
-				0102AA04B9551B80E344180D8596C329 /* Support Files */,
+				14CF65C38554156E7991A371FFE65C87 /* GradientAnimator.modulemap */,
+				3CF6365E3A12DF79AA4BBD60F97655BA /* GradientAnimator.xcconfig */,
+				0BC2A236A8DBD8257498A754C9BECD4D /* GradientAnimator-dummy.m */,
+				FC8D61FC858402A4028227E0D334365E /* GradientAnimator-Info.plist */,
+				7156E214D19EAD93546D3B47B57C81AB /* GradientAnimator-prefix.pch */,
+				5EB2ED1DFA013E022E45595AC6B7F16D /* GradientAnimator-umbrella.h */,
 			);
-			name = CircleMenu;
-			path = CircleMenu;
+			name = "Support Files";
+			path = "../Target Support Files/GradientAnimator";
 			sourceTree = "<group>";
 		};
-		7860222075D59891D230754683C772A2 /* Targets Support Files */ = {
+		15226B892AC99A79040291C02B76B7EE /* Pods-TravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				D9B538EC79F5D14ADF2802CE44F14AC1 /* Pods-TravelApp */,
+				7698AD88CBD9906FE1F0F5813503A921 /* Pods-TravelApp.modulemap */,
+				7BF1B0CCF3D36E7A64D7FC4B48C7A555 /* Pods-TravelApp-acknowledgements.markdown */,
+				E044F207D99EFED8D74BB453E0A85B76 /* Pods-TravelApp-acknowledgements.plist */,
+				DE465047C3ADF5D322E8E6D284E9D2B1 /* Pods-TravelApp-dummy.m */,
+				7B264E7DB8DBF4B3C3081AECCFCA15DB /* Pods-TravelApp-frameworks.sh */,
+				584828BAF0A7F380AA32A87BDF0B4C68 /* Pods-TravelApp-Info.plist */,
+				51F5AB7A18B0E285062543566CEC69BB /* Pods-TravelApp-resources.sh */,
+				DD84C9270B97F042D58B1CE6D98C13C0 /* Pods-TravelApp-umbrella.h */,
+				2D77EE71E41856EC7EBBE20FEB463784 /* Pods-TravelApp.debug.xcconfig */,
+				9FE31C446CB3B56E9B11D6D13C38B1B2 /* Pods-TravelApp.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-TravelApp";
+			path = "Target Support Files/Pods-TravelApp";
 			sourceTree = "<group>";
 		};
-		A3B939E2C857C8D782F77B16626A020A /* GradientAnimator */ = {
+		35B314D20ABFB59630D187DEB66EF80D /* GradientAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				1425D6A51B22E1455D6022A20D66AB7C /* contents.xcworkspacedata */,
-				001B50DD3A2EDD6C3302EAF6DAFF1C39 /* GradientAnimator.h */,
-				626D469D3A46E55340D9A8312B817426 /* GradientAnimator.podspec */,
-				64968E543376B34174BFD3F3EC5573AB /* GradientAnimator.swift */,
-				83D662F854381D930CCD7CC75DEE7921 /* IDEWorkspaceChecks.plist */,
-				3BE109BF574ADC1B15481FD7F01C998A /* Podfile */,
-				1946E9DC296AF64060B781BBCC92A3A8 /* project.pbxproj */,
-				AA2D5768533FF0D2E4F303A3855E8ADD /* Support Files */,
+				8CDAD51497E3D44384648B0341AA5C45 /* contents.xcworkspacedata */,
+				8614C99087B9FB0071B0AF54560100CB /* GradientAnimator.h */,
+				0FFB63D4B8E1478A89C9009C66E135B7 /* GradientAnimator.podspec */,
+				82D33C1E215A3B6AB74C442BD91BB604 /* GradientAnimator.swift */,
+				C266D7D99E99DC0F42E1494EFEC3118F /* IDEWorkspaceChecks.plist */,
+				F11D1EA407A78A780F8ECA803047E0EB /* Podfile */,
+				6917FA1AD83EDC14E1A027D9DAC807BF /* project.pbxproj */,
+				0447082D50C4AD0C78F3634030881B41 /* Support Files */,
 			);
 			name = GradientAnimator;
 			path = GradientAnimator;
 			sourceTree = "<group>";
 		};
-		AA2D5768533FF0D2E4F303A3855E8ADD /* Support Files */ = {
+		37B8A0ADDFDFDBEBBD2FBF2543212D5B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB35BB9382D7CF9C54700067696B83C1 /* GradientAnimator.modulemap */,
-				C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */,
-				65C237FC1DB4DBDA8DE8F114A2429B3C /* GradientAnimator-dummy.m */,
-				88277EF5B1DCF981F5EF1AF13F634998 /* GradientAnimator-Info.plist */,
-				206DF49B985555DE33A782E8589E27DF /* GradientAnimator-prefix.pch */,
-				A1E666CC94BE67596E6DBACD823FA3AD /* GradientAnimator-umbrella.h */,
+				93E62F843A7C8BE4A56F16C7D3C7F6E6 /* GoogleMaps.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GradientAnimator";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		632935E3BCC0CDC7616BC7F41FC1E23E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				D3585A0885D85F5C93C0B841DD66333A /* Frameworks */,
+				C0EFD4D1B142842F820CE1F550AC9C0D /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		8468F4F3E4B16295FBFE008AFB14B5A3 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEDB030B8425F6EA4F14FAFED280DB0C /* Frameworks */,
+				94F12B456E8EB24C745C81368B6AF878 /* Resources */,
+				02798B7F222088EC1607560079515CA1 /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		8F3B4EF17E5F070BE7A2ADE3826752DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2B818E621E3E7E2B05C403BD6AA3954 /* CircleMenu */,
+				E51FB65480AE69540CF9C84B82926112 /* GoogleMaps */,
+				8468F4F3E4B16295FBFE008AFB14B5A3 /* GooglePlaces */,
+				35B314D20ABFB59630D187DEB66EF80D /* GradientAnimator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90A41CBFF5275C7F8879B092B82DC229 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				97D2ABDC8EBEAE4DF20613C2F9731B8E /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		94F12B456E8EB24C745C81368B6AF878 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFD0EC88738A5D8A4AE1D5039FC08954 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		97D2ABDC8EBEAE4DF20613C2F9731B8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C8D3C166009AF314460B047C2EC44 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A33DD377784661B55D831916B62D4A8C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				40D2E9A66BECBE95D99750B79C8A3EB4 /* CircleMenu.modulemap */,
+				28BEAC6B18DE522C4B0372670CCEA9BE /* CircleMenu.xcconfig */,
+				98233AA7EFD13CC9796EA1B8363610F7 /* CircleMenu-dummy.m */,
+				58F76FDA4111D446813DA92E888C3938 /* CircleMenu-Info.plist */,
+				65E92B7CA7FBEE6781F689DFC3AE7C3D /* CircleMenu-prefix.pch */,
+				1FB9ABDA97B584FFE2CA0FB74B0DC0FA /* CircleMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CircleMenu";
 			sourceTree = "<group>";
 		};
 		B8ADED2AB609D814BF79FB858D3B6D4E /* Products */ = {
@@ -194,14 +317,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C0EFD4D1B142842F820CE1F550AC9C0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				593D0C86897E15E03D239ECF37B104A9 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CEDB030B8425F6EA4F14FAFED280DB0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68E6B1AA8DDC80BEE4900D98A40B9AE9 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DDB93F42CE4A47723DAE6B876CDDBAEA /* Pods */,
+				8F3B4EF17E5F070BE7A2ADE3826752DD /* Pods */,
 				B8ADED2AB609D814BF79FB858D3B6D4E /* Products */,
-				7860222075D59891D230754683C772A2 /* Targets Support Files */,
+				EF2E67B040B2669C115DB8155A50ECB4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,30 +352,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D9B538EC79F5D14ADF2802CE44F14AC1 /* Pods-TravelApp */ = {
+		D3585A0885D85F5C93C0B841DD66333A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94AB54424B43FD4BE9BDF1BB533FBFD0 /* Pods-TravelApp.modulemap */,
-				B620B70A05C6B3B418E1B2A54A6991FB /* Pods-TravelApp-acknowledgements.markdown */,
-				2E588381779A46F6780ABA00951AE77A /* Pods-TravelApp-acknowledgements.plist */,
-				A8187DC38438DE35B0994DD1BC049EBF /* Pods-TravelApp-dummy.m */,
-				35967B1AB77758CBB4F923E2590354E4 /* Pods-TravelApp-frameworks.sh */,
-				4347E3244B13BE85481457FBA194D069 /* Pods-TravelApp-Info.plist */,
-				251BE3A14D97BC2C4AAF2419C825640D /* Pods-TravelApp-umbrella.h */,
-				5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */,
-				80F1EB73AA0B61F4F58B33A39E0FCB51 /* Pods-TravelApp.release.xcconfig */,
+				9307A64273DB935933B8E7CF8865BC89 /* GoogleMaps.framework */,
+				264F2EF7AB1887FE099098E4A12CB257 /* GoogleMapsCore.framework */,
 			);
-			name = "Pods-TravelApp";
-			path = "Target Support Files/Pods-TravelApp";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDB93F42CE4A47723DAE6B876CDDBAEA /* Pods */ = {
+		E2B818E621E3E7E2B05C403BD6AA3954 /* CircleMenu */ = {
 			isa = PBXGroup;
 			children = (
-				326625A8A81E874C036686BDDAC12162 /* CircleMenu */,
-				A3B939E2C857C8D782F77B16626A020A /* GradientAnimator */,
+				BE32D6F56D04CD831C3B4CBAF029B664 /* CircleMenu.swift */,
+				ABE430A53178F4B22CAE7C5440784F33 /* CircleMenuButton.swift */,
+				D08EEE78B146BF1C1CB7BA1C326A211A /* CircleMenuLoader.swift */,
+				A33DD377784661B55D831916B62D4A8C /* Support Files */,
 			);
-			name = Pods;
+			name = CircleMenu;
+			path = CircleMenu;
+			sourceTree = "<group>";
+		};
+		E51FB65480AE69540CF9C84B82926112 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				90A41CBFF5275C7F8879B092B82DC229 /* Base */,
+				632935E3BCC0CDC7616BC7F41FC1E23E /* Maps */,
+				37B8A0ADDFDFDBEBBD2FBF2543212D5B /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		EF2E67B040B2669C115DB8155A50ECB4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15226B892AC99A79040291C02B76B7EE /* Pods-TravelApp */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,14 +403,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3FF640998A04C3D90A25A3A4F8A8CEB3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				55C2DD12C0555C2F63105B01C5F82CD7 /* Pods-TravelApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BB234F22BC5EB4A4D2A063727DAF4A28 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,23 +412,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3B8EB2DB7C56E07C4A85EFE844503C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D893350725A56614C46367E432F1FF /* Pods-TravelApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A6E100DEDFF2B895105EB36C356CDFAF /* Pods-TravelApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8653FCEBE171267C966DD01F5379BF32 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */;
+			buildConfigurationList = CFDD1C50EB27D6B00DD90E7DA40D2BAD /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */;
 			buildPhases = (
-				3FF640998A04C3D90A25A3A4F8A8CEB3 /* Headers */,
-				3065043C0E7B5FB98D1091C2EC0C99A0 /* Sources */,
-				C94277F5C305379C43C6C4E8ABA63455 /* Frameworks */,
-				2EEB70A707F3ABCD7C8E1C9F60C7469C /* Resources */,
+				E3B8EB2DB7C56E07C4A85EFE844503C8 /* Headers */,
+				B435740827B87DBC58F0DB0F3634BFE3 /* Sources */,
+				9A1FA28075F3B6FE49BB3554DFFE8D5E /* Frameworks */,
+				C5D0DB29AE407377C3DCA26860C90CCF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7CD23305855D38860BD9F4965C8F86A0 /* PBXTargetDependency */,
-				0FD1B49C35860A57D572F17DBD718362 /* PBXTargetDependency */,
+				9E7B3C56C75F2208F955737CF25E81FD /* PBXTargetDependency */,
+				4C5F327A1F3A2B7867976B15D71B5045 /* PBXTargetDependency */,
+				D446D01E46135E6679152B5C8821DDFC /* PBXTargetDependency */,
+				DAC5891A7D27C0364BEDA112E63D9E3D /* PBXTargetDependency */,
 			);
 			name = "Pods-TravelApp";
 			productName = "Pods-TravelApp";
@@ -349,6 +504,8 @@
 			projectRoot = "";
 			targets = (
 				CD7CC1435F24CFA5E3849556B94252D7 /* CircleMenu */,
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
 				E68819B18A89CCCC7E44BFE8750CD7C6 /* GradientAnimator */,
 				A6E100DEDFF2B895105EB36C356CDFAF /* Pods-TravelApp */,
 			);
@@ -356,13 +513,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2EEB70A707F3ABCD7C8E1C9F60C7469C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7D94BBAE63656494B1A63211681F3C51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,17 +527,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3065043C0E7B5FB98D1091C2EC0C99A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		C5D0DB29AE407377C3DCA26860C90CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B88277B679F824AC936187AA623F44E /* Pods-TravelApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		577BD71351307225430D16DDA919FD39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,27 +562,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B435740827B87DBC58F0DB0F3634BFE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD4237E6E54BC9FF4ADFA7B0FA2C04D /* Pods-TravelApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0FD1B49C35860A57D572F17DBD718362 /* PBXTargetDependency */ = {
+		4C5F327A1F3A2B7867976B15D71B5045 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GradientAnimator;
-			target = E68819B18A89CCCC7E44BFE8750CD7C6 /* GradientAnimator */;
-			targetProxy = AD814CA46F2E4C7846C10D9071EAAF92 /* PBXContainerItemProxy */;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 7116037E74B66E584E737D516DF4F3ED /* PBXContainerItemProxy */;
 		};
-		7CD23305855D38860BD9F4965C8F86A0 /* PBXTargetDependency */ = {
+		9E7B3C56C75F2208F955737CF25E81FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CircleMenu;
 			target = CD7CC1435F24CFA5E3849556B94252D7 /* CircleMenu */;
-			targetProxy = 26DEF359B304890A0F4E9ACC14795496 /* PBXContainerItemProxy */;
+			targetProxy = 37CFA3537D2DE0EA666D931FE0424FD1 /* PBXContainerItemProxy */;
+		};
+		D42315111F400C0605ACCD6B5CAF2178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 6EB1C2DD30E6564FC3135C9E8002D8F7 /* PBXContainerItemProxy */;
+		};
+		D446D01E46135E6679152B5C8821DDFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 2220CE632ACA6E5E05BA30900DE58010 /* PBXContainerItemProxy */;
+		};
+		DAC5891A7D27C0364BEDA112E63D9E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GradientAnimator;
+			target = E68819B18A89CCCC7E44BFE8750CD7C6 /* GradientAnimator */;
+			targetProxy = B452603B6DDF0E7F6AA4287ABAC70868 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34BDDF742D99C2DC1C2B3B93240F61CF /* Debug */ = {
+		44060CC8A81DCB29510CE7FBC0BCA4D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DE74B7B76D98F87EEBA0D0538B02199 /* Pods-TravelApp.debug.xcconfig */;
+			baseConfigurationReference = 9FE31C446CB3B56E9B11D6D13C38B1B2 /* Pods-TravelApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -464,14 +639,31 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E62F843A7C8BE4A56F16C7D3C7F6E6 /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8CB4A4505F5FAFBE9AFAA18CA102E37A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */;
+			baseConfigurationReference = 3CF6365E3A12DF79AA4BBD60F97655BA /* GradientAnimator.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -505,6 +697,22 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		907050E8ED96EF2CF04EC3D293E73BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9AA3D49B55F1C48C8F8A038575FBA5 /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -572,7 +780,7 @@
 		};
 		93B9E353658A29AF9E4AF3061B8D3605 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C21D71337A56666435B2DFE65271D9F7 /* GradientAnimator.xcconfig */;
+			baseConfigurationReference = 3CF6365E3A12DF79AA4BBD60F97655BA /* GradientAnimator.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -606,9 +814,47 @@
 			};
 			name = Debug;
 		};
+		A53B9E4B91C6EB501598C1B585B615B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D77EE71E41856EC7EBBE20FEB463784 /* Pods-TravelApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C0FC952704A71F3471FA5C4DDA685386 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */;
+			baseConfigurationReference = 28BEAC6B18DE522C4B0372670CCEA9BE /* CircleMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -644,7 +890,7 @@
 		};
 		C24CF1B918413783C04E1ABE3612F7F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CABC39205D60AD64DD0C7592C64E36FC /* CircleMenu.xcconfig */;
+			baseConfigurationReference = 28BEAC6B18DE522C4B0372670CCEA9BE /* CircleMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -677,42 +923,37 @@
 			};
 			name = Debug;
 		};
-		D3F1FDC970B563D39410D6E092A405D9 /* Release */ = {
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80F1EB73AA0B61F4F58B33A39E0FCB51 /* Pods-TravelApp.release.xcconfig */;
+			baseConfigurationReference = 93E62F843A7C8BE4A56F16C7D3C7F6E6 /* GoogleMaps.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TravelApp/Pods-TravelApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC85D7712D8EE6E340F053BC38E1FB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9AA3D49B55F1C48C8F8A038575FBA5 /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -797,6 +1038,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2FC2AC47FDB0310285CE777F18CD1532 /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907050E8ED96EF2CF04EC3D293E73BD9 /* Debug */,
+				DC85D7712D8EE6E340F053BC38E1FB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA46832D8A16AA4E4811383B204D2A4 /* Debug */,
+				C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -806,11 +1065,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8653FCEBE171267C966DD01F5379BF32 /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */ = {
+		CFDD1C50EB27D6B00DD90E7DA40D2BAD /* Build configuration list for PBXNativeTarget "Pods-TravelApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34BDDF742D99C2DC1C2B3B93240F61CF /* Debug */,
-				D3F1FDC970B563D39410D6E092A405D9 /* Release */,
+				A53B9E4B91C6EB501598C1B585B615B1 /* Debug */,
+				44060CC8A81DCB29510CE7FBC0BCA4D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
