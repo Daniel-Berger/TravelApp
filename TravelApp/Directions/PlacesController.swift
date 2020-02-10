@@ -6,6 +6,7 @@
 //  Copyright © 2020 daniel berger. All rights reserved.
 //
 
+// https://console.cloud.google.com/
 
 //import UIKit
 import SwiftUI
@@ -24,9 +25,9 @@ class PlacesController: UIViewController, CLLocationManagerDelegate {
         
         view.addSubview(mapView)
         mapView.fillSuperview()
-        mapView.showsCompass = true
-        mapView.showsScale = true
-        mapView.showsBuildings = true
+//        mapView.showsCompass = true
+//        mapView.showsScale = true
+//        mapView.showsBuildings = true
         mapView.showsUserLocation = true
         locationManager.delegate = self
     
@@ -49,7 +50,7 @@ class PlacesController: UIViewController, CLLocationManagerDelegate {
                 
                 self?.mapView.addAnnotation(annotation)
             })
-            self?.mapView.showAnnotations(self?.mapView.annotations ?? [], animated: true)
+            self?.mapView.showAnnotations(self?.mapView.annotations ?? [], animated: false)
         }
     }
     
