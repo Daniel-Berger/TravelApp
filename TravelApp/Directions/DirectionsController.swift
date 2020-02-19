@@ -195,6 +195,8 @@ class DirectionsController: UIViewController {
         navBar.backgroundColor = #colorLiteral(red: 0.1259145737, green: 0.5621746778, blue: 0.9666383862, alpha: 1) //colorLiteral
         view.addSubview(navBar)
         navBar.setupShadow(opacity: 0.5, radius: 5)
+        
+        // OVer HEre 
         navBar.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.topAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: -120, right: 0))
 
         startTextField.attributedPlaceholder = NSAttributedString(string: "Start", attributes: [.foregroundColor : UIColor.white])

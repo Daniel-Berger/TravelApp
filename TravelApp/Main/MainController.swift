@@ -79,7 +79,8 @@ class MainController: UIViewController {
         super.viewDidLoad()
        
         mkMapView.delegate = self
-//        searchTextField.delegate = self
+        searchTextField.delegate = self
+        
         view.addSubview(mkMapView)
         mkMapView.fillSuperview()
         mkMapView.mapType = .standard
@@ -114,7 +115,7 @@ class MainController: UIViewController {
         searchTextField.textColor = .black
         let whiteContainer = UIView(backgroundColor: .white)
         view.addSubview(whiteContainer)
-        whiteContainer.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16), size: CGSize(width: 0, height: 50))
+        whiteContainer.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 8, left: 16, bottom: 0, right: 16), size: CGSize(width: 0, height: 50))
         
         whiteContainer.stack(searchTextField).withMargins(.allSides(16))
         

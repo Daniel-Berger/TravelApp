@@ -1,12 +1,12 @@
 PODS:
   - CircleMenu (4.1.0)
-  - GoogleMaps (3.7.0):
-    - GoogleMaps/Maps (= 3.7.0)
-  - GoogleMaps/Base (3.7.0)
-  - GoogleMaps/Maps (3.7.0):
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
     - GoogleMaps/Base
-  - GooglePlaces (3.7.0):
-    - GoogleMaps/Base (= 3.7.0)
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
   - GradientAnimator (1.0.2)
 
 DEPENDENCIES:
@@ -24,8 +24,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   CircleMenu: a66095199a5e26f19acbb212f077010257767fe5
-  GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
-  GooglePlaces: a62077320f9d64239245af63aa1aa136393ebeb6
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
   GradientAnimator: d0d2f704ef87e1cd4cde783e00c18ddb73efd47a
 
 PODFILE CHECKSUM: e96c8b6224b992c08a3ad981b1557997a84cf8ea
