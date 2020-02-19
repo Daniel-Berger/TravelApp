@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C42FD4A23D7869E00C10949 /* pomona.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4C42FD4923D7869E00C10949 /* pomona.gpx */; };
 		4C42FDB623DB53DD00C10949 /* DirectionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42FDB523DB53DD00C10949 /* DirectionsController.swift */; };
-		4C929A9E23E490A800A05C68 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 4C929A9D23E490A800A05C68 /* SwiftPackageProductDependency */; };
+		4C929A9E23E490A800A05C68 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 4C929A9D23E490A800A05C68 /* JGProgressHUD */; };
 		4CE2014D23CF6F7A00F3E33E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2014C23CF6F7A00F3E33E /* AppDelegate.swift */; };
 		4CE2014F23CF6F7A00F3E33E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2014E23CF6F7A00F3E33E /* SceneDelegate.swift */; };
 		4CE2015123CF6F7A00F3E33E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2015023CF6F7A00F3E33E /* ContentView.swift */; };
@@ -17,13 +17,14 @@
 		4CE2015623CF6F7E00F3E33E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE2015523CF6F7E00F3E33E /* Preview Assets.xcassets */; };
 		4CE2015923CF6F7E00F3E33E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE2015723CF6F7E00F3E33E /* LaunchScreen.storyboard */; };
 		4CE2016223CF739200F3E33E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2016123CF739200F3E33E /* MainController.swift */; };
-		4CE2016523CF7D6100F3E33E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 4CE2016423CF7D6100F3E33E /* SwiftPackageProductDependency */; };
+		4CE2016523CF7D6100F3E33E /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 4CE2016423CF7D6100F3E33E /* LBTATools */; };
 		4CE2016723D6099700F3E33E /* LocationsCarouselController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2016623D6099700F3E33E /* LocationsCarouselController.swift */; };
 		4CE2016923D75C0500F3E33E /* MKMapItem+Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2016823D75C0500F3E33E /* MKMapItem+Address.swift */; };
 		4CF151EC23DF360400473D97 /* LocationSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF151EB23DF360400473D97 /* LocationSearchController.swift */; };
 		4F333C1A23E893FC00D7EEBD /* RouteHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C1923E893FC00D7EEBD /* RouteHeader.swift */; };
 		4F333C1D23E9ED1A00D7EEBD /* InitialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C1C23E9ED1A00D7EEBD /* InitialController.swift */; };
 		4F333C2523EDEE0B00D7EEBD /* PlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C2423EDEE0B00D7EEBD /* PlacesController.swift */; };
+		4F5A84A123FDE07A00E4B2FA /* CustomCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A84A023FDE07A00E4B2FA /* CustomCallout.swift */; };
 		5873F97455193486E54F01A1 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152624E0A96A88BE55C3CED /* Pods_TravelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		4F333C1923E893FC00D7EEBD /* RouteHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteHeader.swift; sourceTree = "<group>"; };
 		4F333C1C23E9ED1A00D7EEBD /* InitialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialController.swift; path = TravelApp/Directions/InitialController.swift; sourceTree = SOURCE_ROOT; };
 		4F333C2423EDEE0B00D7EEBD /* PlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlacesController.swift; path = TravelApp/Directions/PlacesController.swift; sourceTree = SOURCE_ROOT; };
+		4F5A84A023FDE07A00E4B2FA /* CustomCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallout.swift; sourceTree = "<group>"; };
 		D1988862170581865A4725C2 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,8 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C929A9E23E490A800A05C68 /* BuildFile in Frameworks */,
-				4CE2016523CF7D6100F3E33E /* BuildFile in Frameworks */,
+				4C929A9E23E490A800A05C68 /* JGProgressHUD in Frameworks */,
+				4CE2016523CF7D6100F3E33E /* LBTATools in Frameworks */,
 				5873F97455193486E54F01A1 /* Pods_TravelApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4F333C2423EDEE0B00D7EEBD /* PlacesController.swift */,
+				4F5A84A023FDE07A00E4B2FA /* CustomCallout.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -182,8 +185,8 @@
 			);
 			name = TravelApp;
 			packageProductDependencies = (
-				4CE2016423CF7D6100F3E33E /* SwiftPackageProductDependency */,
-				4C929A9D23E490A800A05C68 /* SwiftPackageProductDependency */,
+				4CE2016423CF7D6100F3E33E /* LBTATools */,
+				4C929A9D23E490A800A05C68 /* JGProgressHUD */,
 			);
 			productName = TravelApp;
 			productReference = 4CE2014923CF6F7A00F3E33E /* TravelApp.app */;
@@ -214,8 +217,8 @@
 			);
 			mainGroup = 4CE2014023CF6F7A00F3E33E;
 			packageReferences = (
-				4CE2016323CF7D6100F3E33E /* RemoteSwiftPackageReference */,
-				4C929A9C23E490A800A05C68 /* RemoteSwiftPackageReference */,
+				4CE2016323CF7D6100F3E33E /* XCRemoteSwiftPackageReference "LBTATools" */,
+				4C929A9C23E490A800A05C68 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 4CE2014A23CF6F7A00F3E33E /* Products */;
 			projectDirPath = "";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE2016923D75C0500F3E33E /* MKMapItem+Address.swift in Sources */,
+				4F5A84A123FDE07A00E4B2FA /* CustomCallout.swift in Sources */,
 				4CE2016723D6099700F3E33E /* LocationsCarouselController.swift in Sources */,
 				4C42FDB623DB53DD00C10949 /* DirectionsController.swift in Sources */,
 				4CE2016223CF739200F3E33E /* MainController.swift in Sources */,
@@ -512,7 +516,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4C929A9C23E490A800A05C68 /* RemoteSwiftPackageReference */ = {
+		4C929A9C23E490A800A05C68 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
 			requirement = {
@@ -520,7 +524,7 @@
 				minimumVersion = 2.1.0;
 			};
 		};
-		4CE2016323CF7D6100F3E33E /* RemoteSwiftPackageReference */ = {
+		4CE2016323CF7D6100F3E33E /* XCRemoteSwiftPackageReference "LBTATools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
 			requirement = {
@@ -531,14 +535,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4C929A9D23E490A800A05C68 /* SwiftPackageProductDependency */ = {
+		4C929A9D23E490A800A05C68 /* JGProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4C929A9C23E490A800A05C68 /* RemoteSwiftPackageReference */;
+			package = 4C929A9C23E490A800A05C68 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
 		};
-		4CE2016423CF7D6100F3E33E /* SwiftPackageProductDependency */ = {
+		4CE2016423CF7D6100F3E33E /* LBTATools */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4CE2016323CF7D6100F3E33E /* RemoteSwiftPackageReference */;
+			package = 4CE2016323CF7D6100F3E33E /* XCRemoteSwiftPackageReference "LBTATools" */;
 			productName = LBTATools;
 		};
 /* End XCSwiftPackageProductDependency section */
