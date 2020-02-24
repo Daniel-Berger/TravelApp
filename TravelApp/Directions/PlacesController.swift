@@ -13,12 +13,13 @@ import SwiftUI
 import MapKit
 import LBTATools
 import GooglePlaces
+import JGProgressHUD
 
 class PlacesController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     let mapView = MKMapView()
     let locationManager = CLLocationManager()
-    // HUD Label
+    
     let hudNameLabel = UILabel(text: "Name", font: .boldSystemFont(ofSize: 16))
     let hudAddressLabel = UILabel(text: "Address", font: .boldSystemFont(ofSize: 16))
     let hudTypeLabel = UILabel(text: "Types", textColor: .gray)
@@ -37,12 +38,11 @@ class PlacesController: UIViewController, CLLocationManagerDelegate, MKMapViewDe
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//            locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
         }
         requestForLocationAuthorization()
         
-        //        findNearbyPlaces()
         setupSelectedAnnotationHUD()
     }
     
@@ -75,6 +75,8 @@ class PlacesController: UIViewController, CLLocationManagerDelegate, MKMapViewDe
     }
     
     fileprivate func setupSelectedAnnotationHUD() {
+        infoButton.addTarget(self, action: #selector(handleInformation), for: .touchUpInside)
+        
         view.addSubview(hudContainter)
         hudContainter.layer.cornerRadius = 5
         hudContainter.setupShadow(opacity: 0.2, radius: 5, offset: .zero, color: .darkGray)
@@ -86,6 +88,76 @@ class PlacesController: UIViewController, CLLocationManagerDelegate, MKMapViewDe
                                                  hudAddressLabel,
                                                  hudTypeLabel, spacing: 8),
                              alignment: .center).withMargins(.allSides(16))
+    }
+    
+    @objc fileprivate func handleInformation() {
+
+        guard let placeAnnotation = mapView.selectedAnnotations.first as? PlaceAnnotation else { return }
+    
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Loading photos..."
+        hud.show(in: view)
+        
+        guard let placeId = placeAnnotation.place.placeID else { return }
+        
+        client.lookUpPhotos(forPlaceID: placeId) { [weak self] (photoMetaData, err) in
+            
+            if let error = err {
+                hud.dismiss()
+                return
+            }
+            let dispatchGroup = DispatchGroup()
+            var images = [UIImage]()
+            photoMetaData?.results.forEach({ (photoMetadata) in
+                dispatchGroup.enter()
+                self?.client.loadPlacePhoto(photoMetadata) { (image, error) in
+                    if let error = err {
+                        hud.dismiss()
+                        return
+                    }
+                    dispatchGroup.leave()
+                    guard let image = image else { return }
+                    images.append(image)
+                }
+            })
+            
+            dispatchGroup.notify(queue: .main) {
+                hud.dismiss()
+                let controller = PlacePhotosControlller()
+                controller.items = images
+                self?.present(UINavigationController(rootViewController: controller), animated: true)
+            }
+        }
+    }
+    
+
+    class PhotoCell:LBTAListCell<UIImage> {
+        
+        override var item: UIImage! {
+            didSet {
+                imageView.image = item
+            }
+        }
+        
+        let imageView = UIImageView(image: nil, contentMode: .scaleAspectFill)
+        
+        override func setupViews() {
+            addSubview(imageView)
+            imageView.fillSuperview()
+        }
+    }
+    
+    class PlacePhotosControlller: LBTAListController<PhotoCell, UIImage>, UICollectionViewDelegateFlowLayout {
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            navigationItem.title = "Photos"
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            .init(width: view.frame.width, height: 300)
+        }
     }
     
     class PlaceAnnotation: MKPointAnnotation {

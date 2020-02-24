@@ -145,7 +145,7 @@ class MainController: UIViewController {
     
     fileprivate func setupRegionForMap() {
         
-        let homeCoordinate = CLLocationCoordinate2D(latitude: 41.189428, longitude: -74.053212)
+//        let homeCoordinate = CLLocationCoordinate2D(latitude: 41.189428, longitude: -74.053212)
         let manhattanCoordinate = CLLocationCoordinate2D(latitude: 40.765671, longitude: -73.974302)
         
         let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
@@ -155,6 +155,7 @@ class MainController: UIViewController {
         mkMapView.setRegion(region, animated: true)
     }
     
+    // not called
     fileprivate func setupAnnotaionsForMap() {
      
         let nycAnnotation = MKPointAnnotation()
