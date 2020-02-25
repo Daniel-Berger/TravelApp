@@ -25,6 +25,7 @@
 		4F333C1D23E9ED1A00D7EEBD /* InitialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C1C23E9ED1A00D7EEBD /* InitialController.swift */; };
 		4F333C2523EDEE0B00D7EEBD /* PlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F333C2423EDEE0B00D7EEBD /* PlacesController.swift */; };
 		4F5A84A123FDE07A00E4B2FA /* CustomCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A84A023FDE07A00E4B2FA /* CustomCallout.swift */; };
+		4F5A84A4240575CD00E4B2FA /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A84A3240575CD00E4B2FA /* SlideMenuView.swift */; };
 		5873F97455193486E54F01A1 /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152624E0A96A88BE55C3CED /* Pods_TravelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		4F333C1C23E9ED1A00D7EEBD /* InitialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialController.swift; path = TravelApp/Directions/InitialController.swift; sourceTree = SOURCE_ROOT; };
 		4F333C2423EDEE0B00D7EEBD /* PlacesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlacesController.swift; path = TravelApp/Directions/PlacesController.swift; sourceTree = SOURCE_ROOT; };
 		4F5A84A023FDE07A00E4B2FA /* CustomCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallout.swift; sourceTree = "<group>"; };
+		4F5A84A3240575CD00E4B2FA /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
 		D1988862170581865A4725C2 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 		4CE2014B23CF6F7A00F3E33E /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F5A84A2240575A000E4B2FA /* Side Menu */,
 				4F333C1B23E9ECFC00D7EEBD /* Initial */,
 				4F333C2323EDEDDE00D7EEBD /* Places */,
 				4C42FDB423DB53C900C10949 /* Directions */,
@@ -155,6 +158,14 @@
 				4F5A84A023FDE07A00E4B2FA /* CustomCallout.swift */,
 			);
 			path = Places;
+			sourceTree = "<group>";
+		};
+		4F5A84A2240575A000E4B2FA /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4F5A84A3240575CD00E4B2FA /* SlideMenuView.swift */,
+			);
+			path = "Side Menu";
 			sourceTree = "<group>";
 		};
 		BB079D2B64AC3400FD37D3D9 /* Frameworks */ = {
@@ -312,6 +323,7 @@
 				4CE2016723D6099700F3E33E /* LocationsCarouselController.swift in Sources */,
 				4C42FDB623DB53DD00C10949 /* DirectionsController.swift in Sources */,
 				4CE2016223CF739200F3E33E /* MainController.swift in Sources */,
+				4F5A84A4240575CD00E4B2FA /* SlideMenuView.swift in Sources */,
 				4CF151EC23DF360400473D97 /* LocationSearchController.swift in Sources */,
 				4CE2014D23CF6F7A00F3E33E /* AppDelegate.swift in Sources */,
 				4F333C1D23E9ED1A00D7EEBD /* InitialController.swift in Sources */,
